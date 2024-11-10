@@ -11,7 +11,6 @@ delete colors['blueGray']
 export default {
     content: [
         "./index.html",
-        "./src/**/*.{vue,js,ts,jsx,tsx}",
         "./components/**/*.{js,vue,ts}",
         "./layouts/**/*.vue",
         "./pages/**/*.vue",
@@ -23,9 +22,9 @@ export default {
     theme: {
         extend: {
           content: {
-            'mark_icon': 'url(../src/assets/image/mark_icon.png)',
-            'double_circle_icon': 'url(../src/assets/image/dot-circle.png)',
-            'banner_home_icon': 'url(../src/assets/image/HomeIco.png)'
+            'mark_icon': 'url(~/assets/image/mark_icon.png)',
+            'double_circle_icon': 'url(~/assets/image/dot-circle.png)',
+            'banner_home_icon': 'url(~/assets/image/HomeIco.png)'
           }
         },
         colors: {
