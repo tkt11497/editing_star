@@ -1,0 +1,299 @@
+
+
+.heading-primary {
+    color: $color-primary-light;
+    text-transform: capitalize;
+    font-family: Roboto;
+
+    backface-visibility: hidden;
+    margin-bottom: 0rem;
+
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 700;
+        letter-spacing: normal;
+        line-height: 84px;
+    
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        @include respond(tab-port){
+            font-size: 4.4rem;
+            line-height: 44px;
+        }
+        
+        @include respond(phone) {
+            line-height: 34px;
+            letter-spacing: .04rem;
+            font-size: 2.7rem;
+        }
+        @include respond(phone-xs){
+            font-size: 13.7px;
+            line-height: 16.406px;
+            text-align: left;
+        }
+        /*
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+        */
+    }
+    
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+        animation: moveInRight 1s ease-out;
+
+        @include respond(phone) {
+            letter-spacing: .5rem;
+        }
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+.sub-title{
+    color:  $color-black;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    // font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 27px;
+    &::before{
+        position: absolute;
+        bottom:-10px;
+        // transform: translateY(-50%);
+        left: 10px;
+        content: '';
+        width: 45px;
+        height: 3px;
+        background:  $color-primary-dark;
+    }
+    @include respond(phone){
+        font-size: 19px;
+        line-height: 26px;
+        text-align: left;
+    }
+}
+.sub-title-2{
+    color:  $color-primary-dark;
+    position: relative;
+    font-family: 'Roboto';
+    font-size: 1.8rem;
+    // font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    // margin-bottom: 27px;
+    .sub-title-2-span{
+        font-size: 14px;
+        color: $color-black;
+        max-width:538px;
+        font-weight: 400;
+        display: inline-block;
+    }
+    &::before{
+        position: absolute;
+        bottom:-10px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: '';
+        width: 70px;
+        height: 3px;
+        background:  $color-primary-dark;
+    }
+    @include respond(phone){
+        font-size: 16px;
+        line-height: 26px;
+        // text-align: left;
+    }
+}
+.heading-main1{
+    color:  $color-black;
+    font-family: 'Oswald';
+    font-size: 3.5rem;
+    // font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 42px; 
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    // margin-bottom: 32px;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+.heading-main2{
+    color:  $color-black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    // font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    // letter-spacing: 2.64px;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    @include respond(phone){
+        font-size: 26px;
+        line-height: 31.2px;
+        text-align: left;
+    }
+}
+.text-button{
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 1.5rem;
+    // font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    img{
+        margin-left:5px;
+        display: inline-block;
+    }
+}
+.paragraph1{
+    color: #FFF;
+    font-family: "sfprodisplay";
+    font-size: 2rem;
+    // font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 53px;
+}
+.paragraph2{
+    color: $color-black;
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    // font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    @include respond(phone){
+        font-size: 15px;
+        line-height: 26px;
+    }
+    @include respond(phone-xs){
+        text-align: left;
+    }
+}
+.invest_heading{
+    color: $color-primary-dark;
+    font-family: Oswald;
+    font-size: 6.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 78px;
+    text-transform: uppercase;
+    @include respond(tab-port){
+        font-size: 5.5rem;
+        line-height: 56px;
+    }
+    @include respond(phone){
+        font-size: 4.5rem;
+        line-height: 46px;
+    }
+}
+.who-text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    &-title{
+        color: $color-primary;
+        font-family: Oswald;
+        text-transform: uppercase;
+        font-size: 32px;
+        letter-spacing: 1.5px;
+        font-weight: 600;
+    }
+    &-subtitle{
+        color: $color-black;
+        font-family: Roboto;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 14px;
+        &-icon{
+            margin-right: 5px;
+            margin-top:-2px;
+            display: inline-block;
+            width:15px;
+            height: 15px;
+        }
+    }
+    @include respond(800px){
+        &-title{
+            font-size: 28px;
+        }
+    }
+    @include respond(phone){
+        &-title{
+            font-size: 19px;
+        }
+    }
+    @include respond(450px){
+        width: 100%;
+        &-title{
+            color: $color-white;
+        }
+        &-subtitle{
+            color: $color-white;
+            &-icon{
+              margin-top: -3px;
+            }
+        }
+    }
+}
