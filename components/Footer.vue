@@ -294,7 +294,7 @@ const usefulLinks = [
   background-image: url('@/assets/image/Footer.png');
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 0;
+  // padding: 0;
 }
 .remove-last-border li::after{
   border-color: #888;
