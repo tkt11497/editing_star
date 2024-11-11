@@ -78,7 +78,10 @@
     </li>
 
     <li class="nav-item dropdown-trigger">
-      <NuxtLink to="/life-at-msfl">Careers</NuxtLink>
+      <NuxtLink to="/life-at-msfl" style="position: relative;">
+        Careers
+        <img src="@/assets/image/new_tag.png" alt="tag" class="new_tag"/>
+      </NuxtLink>
       <div class="dropdown-content">
         <NuxtLink to="/life-at-msfl">Life at MSFL</NuxtLink>
         <NuxtLink to="/career">Career</NuxtLink>
@@ -134,6 +137,12 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.new_tag{
+    position: absolute;
+    top: -22px;
+    left: 3px;
+    animation: flash 600ms ease infinite alternate;
+}
 .dropdown-trigger {
   position: relative;
   &:hover .dropdown-content {

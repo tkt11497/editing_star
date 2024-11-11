@@ -105,9 +105,11 @@
     </li>
     <li class="navigation__item accordion">
         <div class="accordion-header"
+            style="position: relative;"
             :class="{active_header: activeAccordion === 'careers'}"
              @click="toggleAccordion('careers')">
             <span>Careers</span>
+            <img src="@/assets/image/new_tag.png" alt="tag" class="new_tag"/>
             <span class="indicator-chevron accordion-icon" :style="{ transform: activeAccordion === 'about' ? 'rotate(-133deg)' : 'rotate(45deg)' }"></span>
         </div>
         <div class="accordion-content" :class="{ active: activeAccordion === 'careers' }">
@@ -155,6 +157,12 @@ const toggleAccordion = (section) => {
 }
 </script>
 <style lang="scss" scoped>
+.new_tag{
+    position: absolute;
+    top: 6px;
+    left: 100px;
+    animation: flash 600ms ease infinite alternate;
+}
 .accordion-header.active_header{
     color: $color-primary;
         &:after {
