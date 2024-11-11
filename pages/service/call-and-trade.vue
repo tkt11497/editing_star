@@ -18,8 +18,7 @@
         <Accordion :accordionDataList="accordionDataList"/>
       </div>
       <div class="col-span-12 md:col-span-3 lg:col-span-3 text-center p-8 sm:pr-8 sm:pl-8 md:pl-0">
-        <RightSidebar :navFlag="`servicePage`"/> 
-       
+        <RightSidebar :navFlag="`servicePage`"/>        
       </div>
     </div>
   </div>  

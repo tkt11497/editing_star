@@ -126,3 +126,9 @@ body,
 .pcontainer{
   max-width: 1500px;
 }
+.boxShadowGreen{
+  box-shadow: 4px 4px 0px #00e785;
+}
+.boxShadowGreenMini{
+  box-shadow: 2px 2px 0px #00e785;
+}

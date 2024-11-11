@@ -157,6 +157,7 @@
 </template>
 <script setup>
 import NewsLetter from './NewsLetter.vue';
+import WhatsAppCompo from './WhatsAppCompo.vue';
 
 const col2ListItem = [
   {id: 1, name: "Privacy Policy"},
