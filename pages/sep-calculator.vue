@@ -188,8 +188,8 @@ const monthlyInvestment = ref(2000)
 const expectedReturnRate = ref(10)
 const timePeriod = ref(2)
 const future_value = ref(0)
-const invested_amount = ref(0)
-const est_returns = ref(0)
+const invested_amount = ref(10)
+const est_returns = ref(20)
 const check_input = (value, min, max) => {
     if(value > max) value = max;
     // if(value < min) value = +min;
