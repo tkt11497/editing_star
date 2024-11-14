@@ -4,11 +4,11 @@
             <a href="" class="btn-text">Investor Relations</a>
             <a href="" class="btn-text">Download</a>
         </div>
-        <div class="home-top-second">
+        <div class="home-top-second" @click="handleGoLogin()">
             <button class="m-btn" style="width: 70px;">
                 Login
             </button>
-            <button class="m-btn">
+            <button class="m-btn" @click="handleGoRegister()">
                 Open An Account
             </button>
             <button class="m-btn">
@@ -99,7 +99,13 @@ onMounted(() => {
         navbar.classList.remove('top') 
       }
     })
-  })
+  });
+const handleGoLogin = () => {
+  window.open("https://web.mewd.xyz/#/pages/login/index", "loin", "blank");
+}
+const handleGoRegister = () => {
+  window.open("https://web.mewd.xyz/#/pages/login/register", "register", "blank");
+}
 </script>
   
 <style lang="scss" scoped>
