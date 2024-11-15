@@ -4,8 +4,8 @@
             <a href="" class="btn-text">Investor Relations</a>
             <a href="" class="btn-text">Download</a>
         </div>
-        <div class="home-top-second" @click="handleGoLogin()">
-            <button class="m-btn" style="width: 70px;">
+        <div class="home-top-second" >
+            <button class="m-btn" style="width: 70px;" @click="handleGoLogin()">
                 Login
             </button>
             <button class="m-btn" @click="handleGoRegister()">
@@ -101,10 +101,10 @@ onMounted(() => {
     })
   });
 const handleGoLogin = () => {
-  window.open("https://web.mewd.xyz/#/pages/login/index", "loin", "blank");
+  window.open("https://web.mewd.xyz/#/pages/login/index", "login", `width=400,height=600,scrollbars=yes`);
 }
 const handleGoRegister = () => {
-  window.open("https://web.mewd.xyz/#/pages/login/register", "register", "blank");
+  window.open("https://web.mewd.xyz/#/pages/login/register", "register", `width=400,height=600,scrollbars=yes`);
 }
 </script>
   
