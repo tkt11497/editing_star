@@ -459,6 +459,12 @@
         width: 151px;
         text-wrap: nowrap;
     }
+    @include respond(390px){
+        width: 320px;
+        p{
+            width: 97px;
+        }
+    }
 }
 .heading-main1{
     font-size:26px;
