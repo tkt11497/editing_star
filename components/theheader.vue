@@ -78,12 +78,15 @@
 const market_data = ref([])
 const url = 'https://corsproxy.io/?' + encodeURIComponent('https://www.marwadionline.com/market-info');
 const getmarket_data = async() =>{
-  const res = await axios.get(url)
-  console.log(res.data.data.Table,'res.data')
-  if(res.data.data.Table.length > 0){
-    res.data.data.Table[0].change = (+res.data.data.Table[0].change).toFixed(2)
-  }
-  market_data.value = res.data.data.Table?res.data.data.Table:[]
+  await axios.get(url).then((res)=>{
+    console.log(res.data.data.Table,'res.data')
+    if(res.data.data.Table.length > 0){
+      res.data.data.Table[0].change = (+res.data.data.Table[0].change).toFixed(2)
+    }
+    market_data.value = res.data.data.Table?res.data.data.Table:[]
+
+  })
+  
 }
 onMounted(() => {
   getmarket_data()
