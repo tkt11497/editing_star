@@ -107,7 +107,7 @@
         </div>
        
     </div>
-    <div class="row1 u-center-text mt-24">
+    <div class="row1 u-center-text mt-c">
         <h1 class="heading-main1 u-margin-bottom-custom">Comprehensive Offerings</h1>
         <h1 class="sub-title-2 mb-4">Especially designed wide range of products to meet all your financial needs.</h1>
     </div>
@@ -549,6 +549,12 @@ watch(isCountdownVisible, (visible) => {
 
 
 <style lang="scss" scoped>
+.mt-c{
+    margin-top: 6rem;
+    @include respond(phone){
+    margin-top: 3rem
+ }
+}
 .testimonial-section{
     width: 100%;
     padding: 40px 0px 0px 0px;
