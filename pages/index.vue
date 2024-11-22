@@ -1,31 +1,11 @@
 <template>
     <banner></banner>
-    <noticeBar style="margin-bottom: 0px;" :bgColor="'#0066AF'" :speed="100">
-        <template #default_custom>
-            <p class="notice-text-1">
-                <span>Dear Customers, Kindly update your KYC Details by using our Re-KYC Portal </span>
-                <a href="https://www.google.com">click here</a>
-                <span>Dear Customer, please register NEFT/RTGS in your Trading A/c. If not done, your transactions will be stopped W.E.F. 28-08-2023. </span>
-                <a href="https://www.google.com">click here</a>
-                <span>Important: Keep KYC information Updated </span>
-                <a href="https://www.google.com">click here</a>
-                <span>Marwadi Shares & Finance Limited Bank Details </span>
-                <a href="https://www.google.com">click here</a>
-                <span>NSDL E-Voting </span>
-                <a href="https://www.google.com">click here</a>
-                <span>CDSL E-Voting </span>
-                <a href="https://www.google.com">click here</a>
-                <span>ADVISORY on Mandatory Updation of KYC fields by 31st March, 2022 </span>
-                <a href="https://www.google.com">click here</a>
-            </p>
-        </template>
-    </noticeBar>
     <div class="row1 py-24">
         <div class="col-1-of-2">
             <img src="@/assets/image/row1_img.png" alt="Logo" class="row_1_img">
         </div>
         <div class="col-1-of-2 phone-xs-align-center">
-            <h1 class="heading-main2 mb-4">about us</h1>
+            <h1 class="heading-main2 mb-4">Editingstar</h1>
             <h3 class="sub-title">Over 30 Years of Financial Expertise at Your Service</h3>
             <p class="paragraph2 mb-6">
                 Marwadi Shares and Finance Limited - The one-stop for 

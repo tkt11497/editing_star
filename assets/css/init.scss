@@ -22,19 +22,32 @@
 @import "layout/navigation";
 
 @import "pages/home";
+@font-face {
+  font-family: "spotify"; 
+  src: url('@/assets/font/SpotifyMix-Regular.ttf') format('truetype'); 
+}
+
+.font-spotify {
+  font-family: 'spotify';
+}
 
 html {
   // height: 100%;
 }
 
+@font-face {
+  font-family: 'Spotify Mix';
+  src: url('@/assets/fonts/SpotifyMix-Regular.ttf') format('ttf');
+}
+
+
 body {
-  background: #fff;
+  background: #000;
   // height: 100%;
   margin: 0 auto !important;
-  font-family:'Roboto','sans-serif';
+  font-family:'Spotify Mix';
 }
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 .van-field__body {
   height: 100%;

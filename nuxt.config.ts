@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Marwadi Shares and Finance Limited - Stock Broking Company - Marwadi Shares and Finance Limited',
+      title: 'Find resources, tutorials, and more – EditingStar',
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/logo_m1.svg' },  // Site favicon
+        { rel: 'icon', type: 'image/png', href: '/logo.png' },  // Site favicon
       ], 
       meta: [
         { charset: 'UTF-8' },

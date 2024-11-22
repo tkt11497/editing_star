@@ -3,9 +3,6 @@
         <theheader></theheader>
 
         <slot />
-        <div class="float_button"> 
-            Block Online Trading
-        </div>
         <Footer/>
     </div>
 
@@ -24,6 +21,7 @@ const close_nav=()=>{
 
 <style scoped lang="scss">
 .main-container {
+    overflow: hidden;
     /* height: calc(100vh - 56px); */
     .float_button{
         position: fixed;

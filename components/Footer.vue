@@ -153,7 +153,6 @@
       
     </div>
   </div>
-  <WhatsAppCompo/>
 </template>
 <script setup>
 import NewsLetter from './NewsLetter.vue';

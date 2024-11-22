@@ -1,37 +1,37 @@
 
 
 .heading-primary {
-    color: $color-primary-light;
     text-transform: capitalize;
-    font-family: Roboto;
+    font-family: 'spotify';
+    color: $color-white-light;
 
     backface-visibility: hidden;
     margin-bottom: 0rem;
 
     &--main {
         display: block;
-        font-size: 6rem;
-        font-weight: 700;
-        letter-spacing: normal;
-        line-height: 84px;
-    
-        animation-name: moveInLeft;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
+        letter-spacing: -9px;
+        font-family: 'spotify', sans-serif;
+        text-align: center;
+        font-size: 138px;
+        font-weight: 600;
+        line-height: 150px;
+        color: $color-white-light;
+
+        @include respond(laptop){
+            text-align: center;
+            letter-spacing: -5px;
+            font-size: 120px;
+            line-height: 128px;
+        }
         @include respond(tab-port){
-            font-size: 4.4rem;
-            line-height: 44px;
+            font-size: 110px;
         }
         
         @include respond(phone) {
-            line-height: 34px;
+            font-size: 60px;
+            line-height: 90px;
             letter-spacing: .04rem;
-            font-size: 2.7rem;
-        }
-        @include respond(phone-xs){
-            font-size: 13.7px;
-            line-height: 16.406px;
-            text-align: left;
         }
         /*
         animation-delay: 3s;
@@ -40,14 +40,42 @@
     }
     
     &--sub {
+        margin-top: 20px;
         display: block;
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: 1.75rem;
-        animation: moveInRight 1s ease-out;
-
+        font-size: 50px;
+        font-weight: 500;
+        font-family: 'spotify';
+        line-height: normal;
+        color: $color-white-light;
+        text-align:center ;
+        @include respond(laptop){
+            font-size: 40px;
+        }
+        @include respond(tab-port){
+            margin-top: 10px;
+            font-size: 30px;
+        }
         @include respond(phone) {
-            letter-spacing: .5rem;
+            line-height: 40px;
+            margin-top: 0px;
+            font-size: 20px;
+            // letter-spacing: .5rem;
+        }
+    }
+    &--sub2{
+        font-size: 25px;
+        line-height: 40px; 
+        font-weight: 400;
+        text-align: center;
+        color: $color-white-light;
+        font-family: 'spotify';
+        @include respond(tab-port){
+            font-size: 15px;
+            line-height: 30px; 
+        }
+        @include respond(phone){
+            font-size: 14px;
+            line-height: 25px; 
         }
     }
 }
@@ -168,14 +196,11 @@
 }
 .heading-main2{
     color:  $color-black;
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
-    // font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 36px;
-    // letter-spacing: 2.64px;
-    text-transform: uppercase;
+    letter-spacing: -.06em;
+    font-family: 'spotify';
+    font-size: 9.375rem;
+    line-height: 9.375rem;
+    font-weight: 700;
     backface-visibility: hidden;
 
     animation-name: moveInLeft;

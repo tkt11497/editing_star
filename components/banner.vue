@@ -1,24 +1,13 @@
 <template>
-    <van-swipe class="banner-swipe" :autoplay="4000" :show-indicators="false">
-        <van-swipe-item>
-            <div class="banner__text-box">
-                    <h1 class="heading-primary">
-                        <span class="heading-primary--main">Your Trusted Partner in Achieving</span>
-                        <span class="heading-primary--main">Financial Success</span>
-                    </h1>
-            </div>
-            <img src="@/assets/image/banner11.png" alt="banner"/>
-        </van-swipe-item>
-        <van-swipe-item>
-            <img src="@/assets/image/banner2.jpg" alt="banner"/>
-        </van-swipe-item>
-        <van-swipe-item>
-            <img src="@/assets/image/banner3.jpg" alt="banner"/>
-        </van-swipe-item>
-        <van-swipe-item>
-            <img src="@/assets/image/banner4.jpg" alt="banner"/>
-        </van-swipe-item>
-    </van-swipe>
+  <div class="banner">
+    <div class="over-lay"></div>
+    <img src="@/assets/image/banner.jpg" alt="Banner" class="banner-img">
+    <div class="banner-content-box">
+        <h1 class="heading-primary--main">Editingstar</h1>
+        <h3 class="heading-primary--sub">Unlock Your Creativity with Editingstar</h3>
+        <h3 class="heading-primary--sub2">Editingstar provides powerful functions and high-quality copyright material, helping you to easily make money from editing.</h3>
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -37,23 +26,48 @@ const { query } = useRoute()
 
 
 <style lang="scss" scoped>
- .banner-swipe {
-    // margin-top: 200px;
-    .van-swipe-item {
+.banner{
+    width: 100%;
+    margin-top: -35px;
     position: relative;
-    background-color: #39a9ed;
-    .banner__text-box{
+    padding: 1.25rem;
+    height: 1038px;
+    .over-lay{
         position: absolute;
-        top: 42%;
-        left: 3%;
-        // transform: translate(-50%, -50%);
+        width: 99%;
+        height: 87%;
+        background: rgba(0, 0, 0, 0.40);
+        z-index: 1;
     }
-    img{
+    .banner-img{
         width: 100%;
-        height: 100%;
         object-fit: cover;
+        height: 100%;
+        clip-path: inset(120px 0% 110px 0% round 20px); 
+        z-index: 0;
     }
-  }
- }
+    .banner-content-box{
+        position: absolute;
+        top: 49%;
+        left: 50%;
+        width: 60%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        @include respond(tab-land){
+            top: 50%;
+            width: 80%;
+        }
+        @include respond(tab-port){
+            width: 70%;
+        }
+        @include respond(phone){
+            width: 92%;
+        }
+        
+    }
+    @media (max-width: 1600px) {
+        height: 878px;
+    }
+}
 
 </style>
