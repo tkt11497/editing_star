@@ -12,6 +12,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+@mixin scrollAnimation($animation) {
+    @if $animation == expandFromCenter {
+        animation: expandFromCenter 1s ease-in-out forwards;
+    }
+    @if $animation == moveInLeft {
+        animation: moveInLeft 1s ease-in-out forwards;
+    }
+}
 
 
 // MEDIA QUERY MANAGER

@@ -1,33 +1,33 @@
 <template>
   <ul class="nav-list">
+    <li class="nav-item">
+      <NuxtLink to="/home">Home</NuxtLink>
+    </li>
     <li class="nav-item dropdown-trigger">
-      <NuxtLink to="/who-we-are">Features
+      <NuxtLink to="/who-we-are">About Editingstar
         <img src="@/assets/image/arrow.svg" alt="arrow" class="arrow-icon" />
       </NuxtLink>
       <div class="dropdown-content">
-        <NuxtLink to="/who-we-are">Customization</NuxtLink>
-        <NuxtLink to="/our-history">Growth</NuxtLink>
-        <NuxtLink to="/leadership">Monetization</NuxtLink>
+        <NuxtLink to="/who-we-are">Editingstar Introduction</NuxtLink>
+        <NuxtLink to="/our-history">Development Direction</NuxtLink>
+        <NuxtLink to="/leadership">Certificates</NuxtLink>
       </div>
     </li>
     <li class="nav-item">
-      <NuxtLink to="/equity_directive">Resources</NuxtLink>
+      <NuxtLink to="/equity_directive">News & Media</NuxtLink>
     </li>
     <li class="nav-item ">
-      <NuxtLink to="/service/research-and-advisory">Video</NuxtLink>
+      <NuxtLink to="/service/research-and-advisory">Community</NuxtLink>
     </li>
 
     <li class="nav-item">
-      <NuxtLink to="/equity-derivatives-research-report">Podcast</NuxtLink>
+      <NuxtLink to="/equity-derivatives-research-report">Classroom</NuxtLink>
     </li>
 
     <li class="nav-item ">
       <NuxtLink to="/life-at-msfl" style="position: relative;">
-        Switch
+        User Guide
       </NuxtLink>
-    </li>
-    <li class="nav-item ">
-      <NuxtLink to="/sep-calculator">Help</NuxtLink>
     </li>
     <!-- <li class="nav-item">
       <img src="@/assets/image/search_icon.png" alt="search" />
@@ -85,11 +85,12 @@ export default {
   display: none;
   position: absolute;
   top: 32px;
-  left: -62px;
-  background-color: #fff;
+  left: -32px;
+  background-color: #9691FF;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
   border-radius: 16px;
   padding: 8px;
-  min-width: 210px;
+  min-width: 223px;
   // min-width: 160px;
   min-height: 50px;
   z-index: 1;
@@ -112,10 +113,11 @@ export default {
     padding: 12px 16px;
     border-radius: 10px;
     text-align: left;
-    color: $color-black!important;
+    color: #000!important;
     display: block;
     &:hover {
-      background-color: #f1f1f1;
+      background-color: #26008D;
+      color: #fff!important;
     }
     &:hover::after {
       display: none;

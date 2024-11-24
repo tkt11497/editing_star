@@ -13,8 +13,9 @@
               </div>
             </div>
             <div class="navbar_content">
-              <button class="header-btn">Log in</button>
-              <button class="header-btn header-btn--signup">Sign up</button>
+              <img class="language-icon" src="@/assets/image/language-icon.svg" alt="language" />
+              <!-- <button class="header-btn">Log in</button>
+              <button class="header-btn header-btn--signup">Sign up</button> -->
 
                 <div class="navigation drawer-toggle">
                       <input type="checkbox" class="navigation__checkbox" ref="navi_toggle" id="navi-toggle">                    
@@ -96,14 +97,20 @@ let lastScroll = window.scrollY;
 }
 .navigation{
   display: none;
-  @include respond(tab-port){
+  @include respond(980px){
     display: block;
   }
 }
 .navbar_content{
     display: flex;
     align-items: center;
-    @include respond(850px){
+    flex-grow: 0;
+    .language-icon{
+      margin-right: 16px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    @include respond(980px){
         display: flex;
     }
 }
@@ -143,6 +150,7 @@ let lastScroll = window.scrollY;
     padding:0px;
     position: relative;
     display: flex;
+    flex-grow: 0;
   }
   .header1 {
      display: flex;
@@ -160,6 +168,17 @@ let lastScroll = window.scrollY;
   }
   
   .app-links {
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    @include respond(1280px){
+      margin-right: 10px;
+    }
+    @include respond(tab-land){
+      margin-right: 0px;
+    }
     // justify-self: end;
   }
   
@@ -187,13 +206,13 @@ let lastScroll = window.scrollY;
     font-size: 17px;
   }
   
-  @media (min-width: 900px) {
+  @media (min-width: 981px) {
     .app-links {
-      display: block;
+      display: flex;
     }
   
   }
-  @media (max-width: 901px) {
+  @media (max-width: 980px) {
     .app-links {
       display: none;
     }

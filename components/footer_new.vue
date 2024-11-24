@@ -150,6 +150,7 @@
     flex-direction: column;
     // border: 1px solid white;
     justify-content: flex-start;
+    margin-left: 5px;
     padding-top: 20px;
     align-self: stretch;
     flex:0 0 12%;
@@ -161,7 +162,25 @@
    .footer-left{
     flex:0 0 25%;
    }
-
+  }
+  @include respond('tab-port'){
+    flex-wrap: wrap;
+    .footer-left{
+      flex:1 0 100%;
+      .logo-box{
+        margin-bottom: 20px;
+      }
+    }
+    .footer-col-flex-1{
+      flex:0 0 23%;
+    }
+    .footer-col-flex-2{
+      flex:0 0 28%;
+    }
+  }
+  @include respond('phone'){
+    flex-direction: column;
+    gap: 20px;
   }
 }
 </style>

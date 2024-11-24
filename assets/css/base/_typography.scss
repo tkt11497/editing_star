@@ -56,7 +56,7 @@
             font-size: 30px;
         }
         @include respond(phone) {
-            line-height: 40px;
+            line-height: 30px;
             margin-top: 0px;
             font-size: 20px;
             // letter-spacing: .5rem;
@@ -75,7 +75,7 @@
         }
         @include respond(phone){
             font-size: 14px;
-            line-height: 25px; 
+            line-height: 20px; 
         }
     }
 }
@@ -120,29 +120,16 @@
 }
 
 .sub-title{
-    color:  $color-black;
+    color:  $color-white;
     position: relative;
-    font-family: 'Oswald', sans-serif;
-    font-size: 24px;
-    // font-size: 24px;
+    font-family: 'spotify', sans-serif;
+    font-size: 60px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 35px;
-    margin-bottom: 27px;
-    &::before{
-        position: absolute;
-        bottom:-10px;
-        // transform: translateY(-50%);
-        left: 10px;
-        content: '';
-        width: 45px;
-        height: 3px;
-        background:  $color-primary-dark;
-    }
+    font-weight: 600;
+    line-height: 96px;
+    letter-spacing: -2.88px;
     @include respond(phone){
-        font-size: 19px;
-        line-height: 26px;
-        text-align: left;
+       
     }
 }
 .sub-title-2{
@@ -180,19 +167,19 @@
 }
 .heading-main1{
     color:  $color-black;
-    font-family: 'Oswald';
-    font-size: 3.5rem;
+    font-family: 'spotify';
+    font-size: 92px;
     // font-size: 35px;
     font-style: normal;
     font-weight: 600;
-    line-height: 42px; 
-    text-transform: uppercase;
+    line-height: 96px; 
     backface-visibility: hidden;
+    letter-spacing: -2.88px;
     // margin-bottom: 32px;
 
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
+    // animation-name: moveInLeft;
+    // animation-duration: 1s;
+    // animation-timing-function: ease-out;
 }
 .heading-main2{
     color:  $color-black;
@@ -237,88 +224,4 @@
     font-style: normal;
     font-weight: 400;
     line-height: 53px;
-}
-.paragraph2{
-    color: $color-black;
-    font-family: "Roboto";
-    font-size: 1.5rem;
-    // font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    @include respond(phone){
-        font-size: 15px;
-        line-height: 26px;
-    }
-    @include respond(phone-xs){
-        text-align: left;
-    }
-}
-.invest_heading{
-    color: $color-primary-dark;
-    font-family: Oswald;
-    font-size: 6.5rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 78px;
-    text-transform: uppercase;
-    @include respond(tab-port){
-        font-size: 5.5rem;
-        line-height: 56px;
-    }
-    @include respond(phone){
-        font-size: 4.5rem;
-        line-height: 46px;
-    }
-}
-.who-text-box{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    &-title{
-        color: $color-primary;
-        font-family: Oswald;
-        text-transform: uppercase;
-        font-size: 32px;
-        letter-spacing: 1.5px;
-        font-weight: 600;
-    }
-    &-subtitle{
-        color: $color-black;
-        font-family: Roboto;
-        font-weight: 400;
-        text-transform: uppercase;
-        font-size: 14px;
-        &-icon{
-            margin-right: 5px;
-            margin-top:-2px;
-            display: inline-block;
-            width:15px;
-            height: 15px;
-        }
-    }
-    @include respond(800px){
-        &-title{
-            font-size: 28px;
-        }
-    }
-    @include respond(phone){
-        &-title{
-            font-size: 19px;
-        }
-    }
-    @include respond(450px){
-        width: 100%;
-        &-title{
-            color: $color-white;
-        }
-        &-subtitle{
-            color: $color-white;
-            &-icon{
-              margin-top: -3px;
-            }
-        }
-    }
 }

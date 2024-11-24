@@ -1,33 +1,33 @@
 <template>
 <ul class="navigation__list">
     <li class="navigation__item accordion">
+        <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/">Home</NuxtLink>
+    </li>
+    <li class="navigation__item accordion">
         <div class="accordion-header"
             :class="{active_header: activeAccordion === 'about'}"
              @click="toggleAccordion('about')">
-            <span>Features</span>
+            <span>About Editingstar</span>
             <span class="indicator-chevron accordion-icon"></span>
         </div>
         <div class="accordion-content" :class="{ active: activeAccordion === 'about' }">
-            <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/who-we-are">Customization</NuxtLink>
-            <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/our-history">Growth</NuxtLink>
-            <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/leadership">Monetization</NuxtLink>
+            <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/who-we-are">Editingstar Introduction</NuxtLink>
+            <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/our-history">Development Direction</NuxtLink>
+            <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/leadership">Certificates</NuxtLink>
         </div>
     </li>
     <li class="navigation__item accordion">
-        <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/contact-us">Resources</NuxtLink>
+        <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/contact-us">News & Media</NuxtLink>
     </li>
     <li class="navigation__item accordion">
-        <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/contact-us">Video</NuxtLink>
-    </li>
-    <li class="navigation__item accordion">
-        <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/contact-us">Podcast</NuxtLink>
+        <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/contact-us">Community</NuxtLink>
     </li>
 
     <li class="navigation__item accordion">
-        <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/contact-us">Switch</NuxtLink>
+        <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/contact-us">Classroom</NuxtLink>
     </li>
     <li class="navigation__item accordion" >
-        <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/contact-us">Help</NuxtLink>
+        <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/contact-us">User Guide</NuxtLink>
     </li>
 </ul>
 </template>

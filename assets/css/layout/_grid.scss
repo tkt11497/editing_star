@@ -1,5 +1,5 @@
 .row1 {
-    max-width: $grid-width;
+    max-width: 100%;
     margin: 0 auto;
 
     &:not(:last-child) {
@@ -12,7 +12,7 @@
     }
     
     @include respond(tab-port) {
-        max-width: 105rem;
+        // max-width: 105rem;
         padding: 2rem;
         // max-width: 60rem;
         // max-width: 50rem;
@@ -81,4 +81,22 @@
         width: calc(4 * ((100% - 4 * #{$gutter-horizontal}) / 5) + 3 * #{$gutter-horizontal});
     }
 
+}
+.flex-row{
+    padding: 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+    .flex-col-img{
+        display: flex;
+        flex:0 0 40%;
+        border: 1px solid red;
+    }
+    .flex-col-text{
+        display: flex;
+        flex:0 0 60%;
+        border: 1px solid blue;
+    }
 }

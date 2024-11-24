@@ -60,3 +60,13 @@
         transform: translate(0);
     }
 }
+@keyframes expandFromCenter {
+    0% {
+        clip-path: inset(40% round 0px);
+      /* Start with clipped center */
+    }
+
+    100% {
+        clip-path: inset(0% round 0px); /* Fully expanded with no clipping */
+    }
+}
