@@ -4,7 +4,7 @@
           <div class="header1" >
             <div class="brand-name" @click="$router.push('/home')">
                 <img width="69px" src="@/assets/image/logo.png" alt="logo"/>
-              <p>editingstar</p>
+                <p>editingstar</p>
               </div>
             <div class="header_content">
   

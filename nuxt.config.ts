@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Find resources, tutorials, and more – EditingStar',
+      title: 'EditingStar',
       link: [
         { rel: 'icon', type: 'image/png', href: '/logo.png' },  // Site favicon
       ], 

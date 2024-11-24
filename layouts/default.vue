@@ -3,7 +3,7 @@
         <theheader></theheader>
 
         <slot />
-        <Footer/>
+        <footer_new/>
     </div>
 
     <!-- <fx-footer  v-if="route.meta.tarbar" /> -->
