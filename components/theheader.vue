@@ -97,7 +97,7 @@ let lastScroll = window.scrollY;
 }
 .navigation{
   display: none;
-  @include respond(980px){
+  @include respond(tab-port){
     display: block;
   }
 }
@@ -110,7 +110,7 @@ let lastScroll = window.scrollY;
       margin-left: 10px;
       cursor: pointer;
     }
-    @include respond(980px){
+    @include respond(tab-port){
         display: flex;
     }
 }
@@ -206,13 +206,13 @@ let lastScroll = window.scrollY;
     font-size: 17px;
   }
   
-  @media (min-width: 981px) {
+  @media (min-width: 992px) {
     .app-links {
       display: flex;
     }
   
   }
-  @media (max-width: 980px) {
+  @media (max-width: 991px) {
     .app-links {
       display: none;
     }

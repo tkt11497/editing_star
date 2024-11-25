@@ -157,6 +157,11 @@
     gap: 10px;
 
   }
+  @include respond(1290px){
+   .footer-left{
+    flex:0 0 35%;
+   }
+  }
   @include respond('tab-land'){
    flex-wrap: wrap; 
    .footer-left{

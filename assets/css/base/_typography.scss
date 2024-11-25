@@ -120,16 +120,21 @@
 }
 
 .sub-title{
-    color:  $color-white;
+    color:  $color-black;
     position: relative;
     font-family: 'spotify', sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 96px;
-    letter-spacing: -2.88px;
-    @include respond(phone){
-       
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -1.44px;
+    @include respond(1290px){
+        font-size: 45px;
+        line-height: 45px;
+    }
+    @include respond(tab-port){
+        font-size: 32px;
+        line-height: 32px;
     }
 }
 .sub-title-2{
@@ -168,18 +173,30 @@
 .heading-main1{
     color:  $color-black;
     font-family: 'spotify';
-    font-size: 92px;
-    // font-size: 35px;
+    font-size: 64px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 96px; 
+    font-weight: 700;
+    line-height: 64px; 
     backface-visibility: hidden;
-    letter-spacing: -2.88px;
+    letter-spacing: -1.92px;
     // margin-bottom: 32px;
 
     // animation-name: moveInLeft;
     // animation-duration: 1s;
     // animation-timing-function: ease-out;
+    @include respond(1290px){
+        font-size: 55px;
+        line-height: 55px;
+        letter-spacing: -1.82px;
+    }
+    @include respond(tab-port){
+        font-size: 48px;
+        line-height: 48px;
+    }
+    @include respond(phone){
+        font-size: 38px;
+        line-height: 38px;
+    }
 }
 .heading-main2{
     color:  $color-black;
@@ -217,11 +234,18 @@
     }
 }
 .paragraph1{
-    color: #FFF;
-    font-family: "sfprodisplay";
-    font-size: 2rem;
-    // font-size: 24px;
+    color: $color-black;
+    font-family: "spotify";
+    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 53px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: normal;
+    @include respond(tab-port){
+        font-size: 17px;
+    }
+    @include respond(phone){
+        font-size: 16px;
+        line-height: 22px;
+    }
 }

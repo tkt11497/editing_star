@@ -62,11 +62,11 @@
 }
 @keyframes expandFromCenter {
     0% {
-        clip-path: inset(40% round 0px);
+        clip-path: inset(40% round 20px);
       /* Start with clipped center */
     }
 
     100% {
-        clip-path: inset(0% round 0px); /* Fully expanded with no clipping */
+        clip-path: inset(0% round 20px); /* Fully expanded with no clipping */
     }
 }
