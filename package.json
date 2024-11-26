@@ -10,7 +10,6 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@heroicons/vue": "^2.1.5",
     "@tsparticles/vue3": "^3.0.1",
     "apexcharts": "^4.0.0",
     "axios": "^1.7.7",

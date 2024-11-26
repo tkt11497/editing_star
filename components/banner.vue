@@ -68,6 +68,9 @@ const { query } = useRoute()
     @media (max-width: 1600px) {
         height: 878px;
     }
+    @include respond(phone){
+        margin-top: -45px;
+    }
 }
 
 </style>

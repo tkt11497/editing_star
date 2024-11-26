@@ -17,11 +17,11 @@
       <NuxtLink to="/equity_directive">News & Media</NuxtLink>
     </li>
     <li class="nav-item ">
-      <NuxtLink to="/service/research-and-advisory">Community</NuxtLink>
+      <NuxtLink to="/community">Community</NuxtLink>
     </li>
 
     <li class="nav-item">
-      <NuxtLink to="/equity-derivatives-research-report">Classroom</NuxtLink>
+      <NuxtLink to="/classroom">Classroom</NuxtLink>
     </li>
 
     <li class="nav-item ">
@@ -179,14 +179,14 @@ export default {
 // .router-link-exact-active {
 //   color: $color-primary !important;
 // }
-.router-link-exact-active::after {
+.nav-item .router-link-exact-active::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -7px;
+  bottom: -2px;
+  background-color: $color-white;
   width: 100%;
-  height: 2px;
-  background-color: $color-primary;
+  height: 1.5px;
   animation: moveInLeft 0.5s ease-out 0.1s;
   animation-fill-mode: backwards;
 }

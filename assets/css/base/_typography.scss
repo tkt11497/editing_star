@@ -128,7 +128,9 @@
     font-weight: 700;
     line-height: 50px;
     letter-spacing: -1.44px;
+    opacity: 0;
     @include respond(1290px){
+        letter-spacing: -0.96px;
         font-size: 45px;
         line-height: 45px;
     }
@@ -173,10 +175,10 @@
 .heading-main1{
     color:  $color-black;
     font-family: 'spotify';
-    font-size: 64px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 700;
-    line-height: 64px; 
+    line-height: 60px; 
     backface-visibility: hidden;
     letter-spacing: -1.92px;
     // margin-bottom: 32px;
@@ -243,6 +245,26 @@
     letter-spacing: normal;
     @include respond(tab-port){
         font-size: 17px;
+    }
+    @include respond(phone){
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+.paragraph2{
+    color: $color-white;
+    font-family: "spotify";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px; /* 272.727% */
+    @include respond(1290px){
+        font-size: 20px;
+        line-height: 30px;
+    }
+    @include respond(tab-port){
+        font-size: 17px;
+        line-height: 25px;
     }
     @include respond(phone){
         font-size: 16px;

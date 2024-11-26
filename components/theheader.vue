@@ -3,7 +3,7 @@
 
           <div class="header1" >
             <div class="brand-name" @click="$router.push('/home')">
-                <img width="69px" src="@/assets/image/logo.png" alt="logo"/>
+                <img  src="@/assets/image/logo.png" alt="logo" class="b-logo"/>
                 <p>editingstar</p>
               </div>
             <div class="header_content">
@@ -164,6 +164,7 @@ let lastScroll = window.scrollY;
      background: #000;
      @include respond(phone){
       padding:0 8px;
+      height: 65px;
      }
   }
   
@@ -195,16 +196,27 @@ let lastScroll = window.scrollY;
     font-weight: 600;
     cursor: pointer;
     margin-left: 20px;
+    .brand-name a {
+    text-decoration: none;
+    color: #fefefe;
+      font-size: 17px;
+    }
+    .b-logo{
+      width: 69px;
+    }
     @include respond(tab-port){
       margin-left: 0px;
     }
+    @include respond(phone){
+      .b-logo{
+        width: 55px;
+      }
+      .brand-name a {
+        font-size: 16px;
+      }
+    }
   }
   
-  .brand-name a {
-    text-decoration: none;
-    color: #fefefe;
-    font-size: 17px;
-  }
   
   @media (min-width: 992px) {
     .app-links {

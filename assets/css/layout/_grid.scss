@@ -1,6 +1,7 @@
 .row1 {
     max-width: $max-width-home;
     margin: 0 auto;
+    padding: 0px 100px;
 
     &:not(:last-child) {
         // margin-bottom: $gutter-vertical;
@@ -122,6 +123,7 @@
         flex-direction: column;
         .flex-col-img{
             flex: 0 0 100%;
+            justify-content: center;
             order: 1;
         }
         .flex-col-text{

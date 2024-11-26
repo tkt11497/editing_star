@@ -20,7 +20,7 @@
         <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/contact-us">News & Media</NuxtLink>
     </li>
     <li class="navigation__item accordion">
-        <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/contact-us">Community</NuxtLink>
+        <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/community">Community</NuxtLink>
     </li>
 
     <li class="navigation__item accordion">

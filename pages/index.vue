@@ -33,10 +33,11 @@
                     Production and release in one go
                 </h1>
                 <p class="paragraph1">
-                    Users use the copyrighted materials provided by Editingstar to edit
-                     videos and upload them to the Editingstar platform. Editingstar will conduct professional secondary review,
-                      editing, advertising, AI function optimization and other professional distribution of users' 
-                    videos to obtain higher playback and likes revenue, helping users realize the added value of editing wealth!
+                    I've been in the industry for over a decade and have used numerous video editing tools, but EditingStar has
+                     completely blown me away with its AI-driven smart editing and automation. The ability to automatically recognize 
+                     key scenes in footage and apply seamless transitions is a huge time-saver. What really impressed me was its automatic color grading
+                      — it’s almost like having a professional colorist on the team. The multi-track editing and 
+                    synchronization features make it perfect for multi-camera shoots. This tool is truly the future of post-production
                 </p>
 
             </div>
@@ -48,7 +49,30 @@
         </div>
 
     </div>
+    <div class="section-3">
+        <div class="row1 u-center-text">
+            <h1 class="heading-main1">Stand out on Editingstar</h1>
+        </div>
+        <div class="flex-row">
+            <div class="flex-col-img">
+                <img ref="expandRef3" class="section_3_img" :class="{'expand-animation': expandRef3_isInView}" 
+                src="@/assets/image/section_3_img.png" alt="section_3_img">
+            </div>
+            <div class="flex-col-text">
+                <!-- <h1 ref="scrollInLeft3" class="sub-title" :class="{'scrollInLeft': scrollInLeft3_isInView}">
+                    Production and release in one go
+                </h1> -->
+                <p class="paragraph2">
+                    The Editingstar platform continuously updates and optimizes copyrighted materials, 
+                    while providing users with multi-faceted rewards and support,
+                     aiming to provide users with high-quality employment, skill improvement, and wealth appreciation!
+                </p>
 
+            </div>
+
+        </div>
+
+    </div>
 
 </template>
 
@@ -65,8 +89,14 @@ const expandRef2 = useTemplateRef('expandRef2')
 const expandRef2_isInView = useIntersectionObserver(expandRef2, {
   threshold: 0.01
 })
+const expandRef3 = useTemplateRef('expandRef3')
+const expandRef3_isInView = useIntersectionObserver(expandRef3, {
+  threshold: 0.01
+})
 const scrollInLeft2 = useTemplateRef('scrollInLeft2')
 const scrollInLeft2_isInView = useIntersectionObserver(scrollInLeft2, {threshold: 0.4})
+// const scrollInLeft3 = useTemplateRef('scrollInLeft3')
+// const scrollInLeft3_isInView = useIntersectionObserver(scrollInLeft3, {threshold: 0.4})
 const isInView = useIntersectionObserver(scrollAnimationRef, {
   threshold: 0.4 // Element is considered "visible" when 20% is in viewport
 })
@@ -144,6 +174,43 @@ const isInView = useIntersectionObserver(scrollAnimationRef, {
     .flex-row{
         .flex-col-img{
             .section_2_img{
+                max-width: 600px;
+                width: 100%;
+                clip-path: inset(40% round 20px);
+                
+            }
+        }
+        .flex-col-text{
+            .sub-title{
+                color: $color-white;
+               margin-top: 0px;
+            }
+            .paragraph1{
+                color: $color-white;
+               margin-top: 24px;
+            }
+        }
+        
+    }
+    @include respond(1290px){
+        padding: 70px 0px 70px 0px;
+    }
+    @include respond(tab-port){
+        padding: 50px 0px 50px 0px;
+    }
+    @include respond(phone){
+        padding: 30px 0px 40px 0px;
+    }
+}
+.section-3{
+    background: linear-gradient(180deg, #26008D 0%, #4000EC 100%);
+    padding: 80px 0px 100px 0px;
+    .heading-main1{
+        color: $color-white;
+    }
+    .flex-row{
+        .flex-col-img{
+            .section_3_img{
                 max-width: 600px;
                 width: 100%;
                 clip-path: inset(40% round 20px);
