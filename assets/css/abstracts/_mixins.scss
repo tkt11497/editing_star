@@ -12,9 +12,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-@mixin scrollAnimation($animation) {
+@mixin scrollAnimation($animation,$delay:0s) {
     @if $animation == expandFromCenter {
         animation: expandFromCenter 1s ease-in-out forwards;
+    }
+    @if $animation == expandFromLeft {
+        // opacity: 0;
+        clip-path: inset(0 100% 0 0);
+        animation: expandFromLeft 1s ease-in-out $delay forwards;
     }
     @if $animation == moveInLeft {
         animation: moveInLeft 1s ease-in-out forwards;

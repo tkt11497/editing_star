@@ -4,13 +4,13 @@
       <NuxtLink to="/home">Home</NuxtLink>
     </li>
     <li class="nav-item dropdown-trigger">
-      <NuxtLink to="/who-we-are">About Editingstar
+      <NuxtLink to="/introduction">About Editingstar
         <img src="@/assets/image/arrow.svg" alt="arrow" class="arrow-icon" />
       </NuxtLink>
       <div class="dropdown-content">
-        <NuxtLink to="/who-we-are">Editingstar Introduction</NuxtLink>
-        <NuxtLink to="/our-history">Development Direction</NuxtLink>
-        <NuxtLink to="/leadership">Certificates</NuxtLink>
+        <NuxtLink to="/introduction">Editingstar Introduction</NuxtLink>
+        <NuxtLink to="/direction">Development Direction</NuxtLink>
+        <!-- <NuxtLink to="/leadership">Certificates</NuxtLink> -->
       </div>
     </li>
     <li class="nav-item">

@@ -11,9 +11,9 @@
             <span class="indicator-chevron accordion-icon"></span>
         </div>
         <div class="accordion-content" :class="{ active: activeAccordion === 'about' }">
-            <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/who-we-are">Editingstar Introduction</NuxtLink>
-            <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/our-history">Development Direction</NuxtLink>
-            <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/leadership">Certificates</NuxtLink>
+            <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/introduction">Editingstar Introduction</NuxtLink>
+            <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/direction">Development Direction</NuxtLink>
+            <!-- <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/leadership">Certificates</NuxtLink> -->
         </div>
     </li>
     <li class="navigation__item accordion">

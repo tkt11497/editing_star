@@ -284,3 +284,25 @@
         transition-delay: .2s;
     }
 }
+.figure-card{
+    box-sizing: border-box;
+    border-radius:40px;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+    .figcaption-card {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        background-color: #fff;
+        padding: 14px 14px 19px 14px;
+        text-align: left;
+        @include respond(1290px){
+            padding: 12px 12px 17px 12px;
+        }
+        }
+}
