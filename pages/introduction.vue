@@ -105,6 +105,60 @@
         </div>
 
     </section>
+    <section class="intro-section-5">
+        <div class="row1 u-center-text">
+            <h1 class="heading-main1">Distribution and Revenue</h1>
+        </div>
+        <div class="flex-row-figures">
+            <div class="flex-col-figure-1">
+                <figure  class="figure-card" >
+                    <img src="@/assets/image/distribution_1.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text2" >
+                       Multi-Channel Distribution: Edited videos can be distributed through EditingStar’s 
+                       network to major global platforms, reaching millions of viewers.
+
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flex-col-figure-2">
+                <figure class="figure-card" >
+                    <img src="@/assets/image/distribution_2.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text2" >
+                       Multi-Channel Distribution: Edited videos can be distributed through EditingStar’s 
+                       network to major global platforms, reaching millions of viewers.
+
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+    </section>
+    <section class="intro-section-6">
+        <div class="row1 u-center-text">
+            <h1 class="heading-main1">Community Support & Growth</h1>
+        </div>
+        <div class="flex-row-figures">
+            <div class="flex-col-figure-1">
+                <figure  class="figure-card" >
+                    <img src="@/assets/image/community_1.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text2" >
+                        Creator Support Program: Provides training, resources, 
+                        and marketing assistance to help new creators grow quickly.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flex-col-figure-2">
+                <figure  class="figure-card" >
+                    <img src="@/assets/image/community_2.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text2" >
+                        Creative Community: A platform for sharing works and exchanging ideas, 
+                        enabling creators to draw inspiration and grow alongside peers worldwide.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+    </section>
 </template>
 <script setup >
 import { useTemplateRef } from 'vue';
@@ -394,7 +448,7 @@ const fig_card_expand_2_isInView = useIntersectionObserver(fig_card_expand_2, {t
     @include respond(phone){
         padding: 15px 0px 40px 0px;
         .heading-main1{
-            // font-size: 30px;
+            font-size: 30px;
         }
         .flex-row-figures{
             .flex-col-figure-1{
@@ -412,6 +466,278 @@ const fig_card_expand_2_isInView = useIntersectionObserver(fig_card_expand_2, {t
                     }
                     .figcaption-card{
                         padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+.intro-section-5{
+    background-image: url('@/assets/image/intro_bg_3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 45px 0px 100px 0px;
+    .heading-main1{
+        color: #fff;
+    }
+    .flex-row-figures{
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0px;
+        .flex-col-figure-1{
+            padding-left: 40px;
+            display: flex;
+            flex:0 0 45%;
+            justify-content: center;
+            .figure-card{
+                 max-width: 410px;
+                max-height: 590px;
+                width: 100%;
+                height: 100%;
+                .figcaption-card{
+                    background-color: #fff;
+                }
+                .figure_text2{
+                    color: #000;
+                }
+            }
+        }
+        .flex-col-figure-2{
+            padding-right: 40px;
+            display: flex;
+            flex:0 0 45%;
+            justify-content: center;
+            .figure-card{
+                max-width: 410px;
+                max-height: 590px;
+                width: 100%;
+                height: 100%;
+                .figcaption-card{
+                    background-color: #fff;
+                }
+                .figure_text2{
+                    color: #000;
+                }
+            }
+        }
+    }
+    @include respond(1550px){
+        // padding: 70px 0px 100px 0px;
+        .flex-row-figures{
+           gap: 0px;
+        }
+    }
+    @include respond(1150px){
+        .flex-row-figures{
+            gap: 30px;
+            .flex-col-figure-1{
+                padding-left: 5px;
+                .figure-card{
+                    .figcaption-card{
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+            .flex-col-figure-2{
+                padding-right: 5px;
+                .figure-card{
+                    .figcaption-card{
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    @include respond(tab-port){
+        padding: 35px 0px 70px 0px;
+    }
+    @include respond(900px){
+        .flex-row-figures{
+            .flex-col-figure-1{
+                padding-left: 0px;
+                flex:0 0 100%;
+                align-self: stretch;
+                .figure-card{
+                    .figcaption-card{
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+            .flex-col-figure-2{
+                padding-right: 0px;
+                flex:0 0 100%;
+                align-self: stretch;
+                .figure-card{
+                    .figcaption-card{
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    @include respond(phone){
+        padding: 15px 0px 40px 0px;
+        .heading-main1{
+            font-size: 30px;
+        }
+        .flex-row-figures{
+            .flex-col-figure-1{
+                .figure-card{
+                    .figcaption-card{
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+            .flex-col-figure-2{
+                .figure-card{
+                    .figcaption-card{
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+.intro-section-6{
+   background-image: url('@/assets/image/intro_bg_4.png');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+    padding: 45px 0px 100px 0px;
+    .heading-main1{
+        color: #fff;
+    }
+    .flex-row-figures{
+        justify-content: center;
+        align-items: flex-start;
+        .flex-col-figure-1{
+            display: flex;
+            flex:0 0 36%;
+            justify-content: center;
+            .figure-card{
+                max-width: 430px;
+                max-height: 638px;
+                width: 100%;
+                height: 100%;
+                .figcaption-card{
+                    background-color: #fff;
+                }
+                .figure_text2{
+                    color: #000;
+                    line-height: 40px;
+                }
+            }
+        }
+        .flex-col-figure-2{
+            display: flex;
+            flex:0 0 55%;
+            justify-content: center;
+            align-items: center;
+            align-self: stretch;
+            .figure-card{
+                max-width: 647px;
+                max-height: 427px;
+                width: 100%;
+                height: 100%;
+                .figcaption-card{
+                    background-color: #fff;
+                }
+                .figure_text2{
+                    color: #000;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+    @include respond(1550px){
+        // padding: 70px 0px 100px 0px;
+        .flex-row-figures{
+           gap: 30px;
+        }
+    }
+    @include respond(1150px){
+        .flex-row-figures{
+            .flex-col-figure-1{
+                flex:0 0 40%;
+                .figure-card{
+                    .figcaption-card{
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+            .flex-col-figure-2{
+                flex:0 0 50%;
+                .figure-card{
+                    img{
+                        min-height: 350px;
+                    }
+                    .figcaption-card{
+                        padding-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
+    @include respond(tab-port){
+        padding: 35px 0px 70px 0px;
+    }
+    @include respond(900px){
+        .flex-row-figures{
+            .flex-col-figure-1{
+                flex:0 0 100%;
+                align-self: stretch;
+                .figure-card{
+                    .figcaption-card{
+                        padding-bottom: 20px;
+                    }
+                    .figure_text2{
+                        line-height: 30px;
+                    }
+                }
+            }
+            .flex-col-figure-2{
+                flex:0 0 100%;
+                .figure-card{
+                    .figcaption-card{
+                        padding-bottom: 20px;
+                    }
+                    .figure_text2{
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    @include respond(phone){
+        padding: 15px 0px 40px 0px;
+        .heading-main1{
+            font-size: 30px;
+        }
+        .flex-row-figures{
+            .flex-col-figure-1{
+                .figure-card{
+                    .figcaption-card{
+                        padding-bottom: 20px;
+                    }
+                    .figure_text2{
+                        line-height: 20px;
+                    }
+                }
+            }
+            .flex-col-figure-2{
+                .figure-card{
+                    height: 350px;
+                    img{
+                        height: 350px;
+                    }
+                    .figcaption-card{
+                        padding-bottom: 20px;
+                    }
+                    .figure_text2{
+                        line-height: 20px;
                     }
                 }
             }
