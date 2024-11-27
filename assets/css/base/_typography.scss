@@ -287,3 +287,17 @@
         line-height: 17px;
     }
 }
+.figure_text2{
+    color: #fff;
+    font-family: "spotify";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+    @include respond(phone){
+        // font-size: 14px;
+        // line-height: 18px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+}
