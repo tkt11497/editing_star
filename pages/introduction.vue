@@ -159,6 +159,75 @@
         </div>
 
     </section>
+    <section class="intro-section-7">
+        <div class="row1 u-center-text">
+            <h1 class="heading-main1">Industry Trends & Platform Advantages</h1>
+        </div>
+        <div class="flex-row-figures">
+            <div class="flex-col-figure">
+                <figure class="figure-card expand-from-left-1">
+                    <img src="@/assets/image/industry_1.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text move-in-btm-1">
+                        Current Trends in the Short Video Industry
+                        Rapid Market Growth: The global short video industry 
+                        is experiencing exponential growth, with 
+                        platforms like TikTok and YouTube Shorts attracting record numbers of users.
+
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flex-col-figure">
+                <figure class="figure-card expand-from-left-2">
+                    <img src="@/assets/image/industry_2.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text move-in-btm-2">
+                        Diverse Content Demand: Short videos are increasingly
+                         being used across various sectors, 
+                        including entertainment, education, news, and branding, driving a surge in demand.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flex-col-figure">
+                <figure class="figure-card expand-from-left-3">
+                    <img src="@/assets/image/industry_3.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text move-in-btm-3">
+                        Widespread Monetization Opportunities: Creators can tap into 
+                        multiple revenue streams such as ad sharing, 
+                        brand collaborations, and tipping, unlocking significant earning potential.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+    </section>
+    <section class="intro-section-8">
+        <div class="row1 u-center-text">
+            <h1 class="heading-main1"> EditingStar’s Competitive Edge</h1>
+        </div>
+        <div class="flex-row-figures">
+            <div class="flex-col-figure-1">
+                <figure  class="figure-card" >
+                    <img src="@/assets/image/edge_1.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text2" >
+                        Global Resource Integration: Collaborations with top-tier video platforms 
+                        ensure creators have access to premium materials.
+                        Innovative Revenue Models: Multi-channel distribution networks maximize creators’ earnings.
+
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flex-col-figure-2">
+                <figure  class="figure-card" >
+                    <img src="@/assets/image/edge_2.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text2" >
+                        Powerful and Efficient Tools: User-friendly editing tools, 
+                        coupled with robust technical support, lower barriers to entry and unlock creative possibilities.
+
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+    </section>
 </template>
 <script setup >
 import { useTemplateRef } from 'vue';
@@ -738,6 +807,222 @@ const fig_card_expand_2_isInView = useIntersectionObserver(fig_card_expand_2, {t
                     }
                     .figure_text2{
                         line-height: 20px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+.intro-section-7{
+    background-color: #003252;
+    padding: 60px 0px 100px 0px;
+    .heading-main1{
+        color: $color-white;
+    }
+    .flex-row-figures{
+        .flex-col-figure{
+            .figure-card{
+                max-width: 422px;
+                width: 100%;
+                height: 100%;
+                .figcaption-card{
+                    min-height: 133px;
+                }
+            }
+        }
+    }
+    @include respond(1550px){
+        padding: 55px 0px 100px 0px;
+        .flex-row-figures{
+            .flex-col-figure{
+                .figure-card{
+                    max-width: 332px;
+                    max-height: 500px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    @include respond(tab-port){
+        padding: 50px 0px 70px 0px;
+        .flex-row-figures{
+            .flex-col-figure{
+                .figure-card{
+                    .figcaption-card{
+                        min-height: unset;
+                    }
+                }
+            }
+        }
+    }
+    @include respond(900px){
+        .flex-row-figures{
+            .flex-col-figure{
+                .figure-card{
+                    max-width: unset;
+                    width: 300px;
+                    height: 500px;
+                }
+            }
+        }
+    }
+    @include respond(phone){
+        padding: 10px 0px 40px 0px;
+        .heading-main1{
+            font-size: 30px;
+        }
+        .flex-row-figures{
+            .flex-col-figure{
+                .figure-card{
+                    max-width: unset;
+                    width: 290px;
+                    height: 450px;
+                }
+            }
+        }
+    }
+}
+.intro-section-8{
+   background: linear-gradient(170deg, #379CFF -14.88%, #8475FF 93.8%);
+    padding: 45px 0px 100px 0px;
+    .heading-main1{
+        // color: #fff;
+    }
+    .flex-row-figures{
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        padding-top: 20px;
+        gap: 30px;
+        .flex-col-figure-1{
+            display: flex;
+            justify-content: center;
+            .figure-card{
+                width: 535px;
+                height: auto;
+                .figcaption-card{
+                    background-color: #fff;
+                }
+                .figure_text2{
+                    color: #000;
+                }
+            }
+        }
+        .flex-col-figure-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: stretch;
+            .figure-card{
+                width: 425px;
+                height: auto;
+                .figcaption-card{
+                    background-color: #fff;
+                }
+                .figure_text2{
+                    color: #000;
+                }
+            }
+        }
+    }
+    @include respond(1550px){
+        .flex-row-figures{
+            .flex-col-figure-1{
+                .figure-card{
+                    max-width: 535px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .flex-col-figure-2{
+                .figure-card{
+                    max-width: 425px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    @include respond(1150px){
+        .flex-row-figures{
+            .flex-col-figure-1{
+                .figure-card{
+                    .figure_text2{
+                        font-size: 12.5px;
+                        line-height: 18px;
+                    }
+                }
+            }
+            .flex-col-figure-2{
+                .figure-card{
+                    .figure_text2{
+                        font-size: 12.5px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+    @include respond(tab-port){
+        padding: 35px 0px 70px 0px;
+    }
+    @include respond(900px){
+        .flex-row-figures{
+            .flex-col-figure-1{
+                flex:0 0 100%;
+                align-self: stretch;
+                .figure-card{
+                    .figure_text2{
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+                }
+            }
+            .flex-col-figure-2{
+                flex:0 0 100%;
+                .figure-card{
+                    max-width: 535px;
+                    width: 100%;
+                    height: auto;
+                    .figure_text2{
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    @include respond(phone){
+        padding: 15px 0px 40px 0px;
+        .heading-main1{
+            font-size: 30px;
+        }
+        .flex-row-figures{
+            .flex-col-figure-1{
+                .figure-card{
+                    height: 350px;
+                    img{
+                        height: 350px;
+                    }
+                    .figcaption-card{
+                        padding-bottom: 15px;
+                    }
+                    .figure_text2{
+                    }
+                }
+            }
+            .flex-col-figure-2{
+                .figure-card{
+                    height: 350px;
+                    img{
+                        height: 350px;
+                    }
+                    .figcaption-card{
+                        padding-bottom: 15px;
+                    }
+                    .figure_text2{
                     }
                 }
             }

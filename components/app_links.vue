@@ -103,9 +103,6 @@ export default {
     height: 20px;
     background-color: transparent;
   }
-  .router-link-exact-active::after {
-    display: none;
-  }
   a {
     font-size: 16px !important;
     font-weight: 500 !important;
