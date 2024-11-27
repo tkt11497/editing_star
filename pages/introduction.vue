@@ -7,7 +7,7 @@
             <div class="flex-col-figure">
                 <figure class="figure-card expand-from-left-1">
                     <img src="@/assets/image/about_card_1.png" alt="figure 1">
-                    <figcaption class="figcaption-card figure_text">
+                    <figcaption class="figcaption-card figure_text move-in-btm-1">
                         EditingStar is an innovative, globally-oriented short video editing platform developed by XXX Company in the United States.
                     </figcaption>
                 </figure>
@@ -15,7 +15,7 @@
             <div class="flex-col-figure">
                 <figure class="figure-card expand-from-left-2">
                     <img src="@/assets/image/about_card_2.png" alt="figure 1">
-                    <figcaption class="figcaption-card figure_text">
+                    <figcaption class="figcaption-card figure_text move-in-btm-2">
                         Leveraging cutting-edge technology and deep industry insights, EditingStar 
                         focuses on delivering efficient and creative editing tools for short 
                         video creators and production teams.
@@ -25,7 +25,7 @@
             <div class="flex-col-figure">
                 <figure class="figure-card expand-from-left-3">
                     <img src="@/assets/image/about_card_3.png" alt="figure 1">
-                    <figcaption class="figcaption-card figure_text">
+                    <figcaption class="figcaption-card figure_text move-in-btm-3">
                         By collaborating with major global video platforms such as YouTube, TikTok,
                          and Instagram, EditingStar offers users access to high-quality,
                           copyright-protected video materials, 
@@ -51,6 +51,18 @@
 
 </script>
 <style scoped lang="scss">
+.move-in-btm-1{
+    opacity: 0;
+    animation: moveInBottom 1s ease-out 1s forwards;
+}
+.move-in-btm-2{
+    opacity: 0;
+    animation: moveInBottom 1s ease-out 2s forwards;
+}
+.move-in-btm-3{
+    opacity: 0;
+    animation: moveInBottom 1s ease-out 3s forwards;
+}
 .expand-from-left-1{
     @include scrollAnimation(expandFromLeft);
 }
@@ -107,6 +119,9 @@
     }
     @include respond(phone){
         padding: 80px 0px 50px 0px;
+        .heading-main1{
+            font-size: 30px;
+        }
         .flex-row-figures{
             .flex-col-figure{
                 .figure-card{
@@ -139,10 +154,21 @@
                 }
         }
         @include respond(tab-port){
-            padding: 0px 70px;
+            .flex-img{
+                padding: 0px 70px;
+            }
         }
         @include respond(phone){
-            padding: 0px 6vw;
+            padding: 10px 0px 25px 0px;
+            .heading-main1{
+                font-size: 30px;
+            }
+            .flex-img{
+                padding: 0px 6vw;
+                .flex-img-item{
+                    margin-top: 0px;
+                }
+            }
         }
 }
 
