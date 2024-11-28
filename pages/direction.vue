@@ -56,7 +56,7 @@
     </section>
     <section class="direction-section-3">
         <div class="row1 u-center-text">
-            <h1 class="heading-main1">Technological Innovation & Tool<br> Optimization</h1>
+            <h1 class="heading-main1">Technological Innovation & Tool<br class="br-hide"> Optimization</h1>
         </div>
         <div class="flex-row-figures">
             <div class="flex-col-figure-1">
@@ -110,6 +110,148 @@
                         The platform will continue to invest in
                          research and development to deliver more powerful 
                          features and user-friendly experiences.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+    </section>
+    <section class="direction-section-4">
+        <div class="row1 u-center-text">
+            <h1 class="heading-main1">Community Building & Creator Ecosystem</h1>
+        </div>
+        <div class="flex-row-figures">
+            <div class="flex-col-figure-1">
+                <figure  class="figure-card" >
+                    <img src="@/assets/image/eco_1.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text">
+                        EditingStar is not just a tool platform 
+                        but an empowering ecosystem for creators.
+                         The platform will further strengthen its 
+                         community to provide more support to users.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flex-col-figure-2">
+                <figure class="figure-card">
+                    <img src="@/assets/image/eco_2.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text ">
+                        Creator Support Programs: Offer training courses, resources, 
+                        and financial incentives to help new creators grow quickly.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="flex-row-figures">
+            <div class="flex-col-figure-2">
+                <figure class="figure-card">
+                    <img src="@/assets/image/eco_3.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text ">
+                        Interactive Community: Build a multilingual interaction platform to
+                         encourage collaboration and idea exchange among creators worldwide.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flex-col-figure-1">
+                <figure  class="figure-card" >
+                    <img src="@/assets/image/eco_4.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text">
+                        Creator Certification: Provide certification for high-quality
+                         creators to increase the credibility and appeal of their content.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+    </section>
+    <section class="direction-section-5">
+        <div class="row1 u-center-text">
+            <h1 class="heading-main1">Content Distribution and Revenue</h1>
+        </div>
+        <div class="flex-row-figures bottom">
+            <div class="flex-col-figure-1">
+                <figure  class="figure-card" >
+                    <img src="@/assets/image/content_1.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text">
+                        EditingStar will innovate in content distribution and 
+                        revenue sharing to help users maximize the value of their content.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flex-col-figure-2">
+                <figure class="figure-card">
+                    <img src="@/assets/image/content_2.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text ">
+                        Multi-Channel Distribution: Partner with more video 
+                        platforms to broaden the exposure of creators' work.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="flex-row-figures top">
+            <div class="flex-col-figure-1">
+                <figure class="figure-card">
+                    <img src="@/assets/image/content_3.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text ">
+                        Personalized Recommendation Algorithms: Develop intelligent recommendation
+                         systems to provide users with precise material and distribution suggestions.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flex-col-figure-2">
+                <figure  class="figure-card" >
+                    <img src="@/assets/image/content_4.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text">
+                        Diverse Revenue Models: Explore new 
+                        monetization avenues such as tipping
+                         and e-commerce collaborations, alongside 
+                         traditional models like ad revenue and playback income.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+    </section>
+    <section class="direction-section-6">
+        <div class="row1 u-center-text">
+            <h1 class="heading-main1">Industry Vertical Expansion</h1>
+        </div>
+        <div class="flex-row-figures bottom">
+            <div class="flex-col-figure-1">
+                <figure  class="figure-card" >
+                    <img src="@/assets/image/expansion_1.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text">
+                        With increasing demand in the short-video industry, 
+                        EditingStar plans to expand into more vertical fields.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flex-col-figure-2">
+                <figure class="figure-card">
+                    <img src="@/assets/image/expansion_2.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text ">
+                        Education and Training: Develop educational video 
+                        materials and tools to serve the online education industry.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="flex-row-figures top">
+            <div class="flex-col-figure-2">
+                <figure class="figure-card">
+                    <img src="@/assets/image/expansion_3.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text ">
+                        Corporate Marketing: Introduce customized services for
+                         businesses, supporting brand marketing and product promotion.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flex-col-figure-1">
+                <figure  class="figure-card" >
+                    <img src="@/assets/image/expansion_4.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text">
+                        Film and Entertainment: Provide professional support for film 
+                        editing, series promotion, and entertainment content creation.
                     </figcaption>
                 </figure>
             </div>
@@ -407,7 +549,8 @@ const direction_scroll_2_isInView = useIntersectionObserver(direction_scroll_2, 
     .flex-row-figures{
         justify-content: center;
         flex-wrap: nowrap;
-        gap: 20px;
+        padding: 0px 50px;
+        gap: 10px;
         .flex-col-figure-1{
             display: flex;
             justify-content: center;
@@ -450,16 +593,438 @@ const direction_scroll_2_isInView = useIntersectionObserver(direction_scroll_2, 
             }
         }
         .flex-col-figure-4{
+            position: relative;
             display: flex;
             flex-direction: column;
             justify-content: center;
             .figure-card{
+                position: relative;
                 max-width: 288px;
                 width: 100%;
                 height: auto;
                 margin-top: 10px;
                 .figcaption-card{
                     
+                }
+                .figure_text{
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+    @include respond(1550px){
+        padding: 60px 0px 100px 0px;
+    }
+    @include respond(tab-port){
+        padding: 55px 0px 70px 0px;
+        .flex-row-figures{
+            flex-direction: column;
+            .flex-col-figure-1{
+                .figure-card{
+                    max-width: unset;
+                    width: 500px;
+                    height: 400px;
+                }
+            }
+            .flex-col-figure-2{
+                .figure-card{
+                    max-width: unset;
+                    width: 500px;
+                    height: 400px;
+                }
+            }
+            .flex-col-figure-3{
+                .figure-card{
+                    max-width: unset;
+                    width: 500px;
+                    height: 400px;
+                }
+            }
+            .flex-col-figure-4{
+                .figure-card{
+                    max-width: unset;
+                    width: 350px;
+                    height: 500px;
+                    .figure_text{
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    @include respond(phone){
+        padding: 20px 0px 50px 0px;
+        .heading-main1{
+            font-size: 30px;
+            letter-spacing: -1.22px;
+            .br-hide{
+                display: none;
+            }
+        }
+        .flex-row-figures{
+            padding: 0px 6vw;
+            .flex-col-figure-1{
+                .figure-card{
+                    width: 100%;
+                    height: 300px;
+                }
+            }
+            .flex-col-figure-2{
+                .figure-card{
+                    width: 100%;
+                    height: 300px;
+                }
+            }
+            .flex-col-figure-3{
+                .figure-card{
+                    width: 100%;
+                    height: 300px;
+                }
+            }
+            .flex-col-figure-4{
+                .figure-card{
+                    width: 100%;
+                    height: 500px;
+                    .figure_text{
+                        line-height: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+.direction-section-4{
+    background-image: url('@/assets/image/direction_bg_2.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 65px 0px 100px 0px;
+    .heading-main1{
+        color: #fff;
+    }
+    .flex-row-figures{
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 20px;
+        .flex-col-figure-1{
+            display: flex;
+            justify-content: center;
+            .figure-card{
+                max-width: 747px;
+                width: 100%;
+                height: auto;
+                .figcaption-card{
+                   
+                }
+                .figure_text{
+                    font-size: 18px;
+                    line-height: 35px;
+                    padding-bottom: 55px;
+                }
+            }
+        }
+        .flex-col-figure-2{
+            display: flex;
+            justify-content: center;
+            .figure-card{
+                max-width: 420px;
+                width: 100%;
+                height: auto;
+                .figcaption-card{
+                    
+                }
+                .figure_text{
+                    font-size: 18px;
+                    line-height: 35px;
+                    padding-bottom: 35px;
+                }
+            }
+        }
+    }
+    @include respond(1550px){
+        padding: 60px 0px 100px 0px;
+    }
+    @include respond(tab-land){
+        .flex-row-figures{
+            gap: 20px;
+            .flex-col-figure-1{
+                .figure-card{
+                    .figure_text{
+                        font-size: 18px;
+                        line-height: 30px;
+                        padding-bottom: 35px;
+                    }
+                }
+            }
+            .flex-col-figure-2{
+                .figure-card{
+
+                    .figure_text{
+                        font-size: 18px;
+                        line-height: 30px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    @include respond(tab-port){
+        padding: 55px 0px 70px 0px;
+        .flex-row-figures{
+            gap: 20px;
+            .flex-col-figure-1{
+                .figure-card{
+                    .figure_text{
+                        font-size: 16px;
+                        line-height: 20px;
+                        padding-bottom: 30px;
+                    }
+                }
+            }
+            .flex-col-figure-2{
+                .figure-card{
+
+                    .figure_text{
+                        font-size: 16px;
+                        line-height: 20px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    @include respond(900px){
+        .flex-row-figures{
+            .flex-col-figure-1{
+                .figure-card{
+                    max-width: unset;
+                    width: 500px;
+                    height: 400px;
+                    .figure_text{
+                        font-size: 16px;
+                        line-height: 25px;
+                        padding-bottom: 40px;
+                    }
+                }
+            }
+            .flex-col-figure-2{
+                .figure-card{
+                    max-width: unset;
+                    width: 500px;
+                    height: 400px;
+                    .figure_text{
+                        font-size: 16px;
+                        line-height: 25px;
+                        padding-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
+    @include respond(phone){
+        padding: 20px 0px 50px 0px;
+        .heading-main1{
+            font-size: 30px;
+            letter-spacing: -1.22px;
+        }
+        .flex-row-figures{
+            .flex-col-figure-1{
+                .figure-card{
+                    width: 100%;
+                    min-height: 380px;
+                    img{
+                        min-height: 375px;
+                    }
+                    .figure_text{
+                        font-size: 16px;
+                        line-height: 25px;
+                        padding-bottom: 25px;
+                    }
+                }
+            }
+            .flex-col-figure-2{
+                .figure-card{
+                    width: 100%;
+                    min-height: 380px;
+                    .figure_text{
+                        font-size: 16px;
+                        line-height: 25px;
+                        padding-bottom: 25px;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+
+}
+.direction-section-5{
+    background: #050014;
+    padding: 65px 0px 100px 0px;
+    .heading-main1{
+        color: #fff;
+    }
+    .flex-row-figures{
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 20px;
+        .flex-col-figure-1{
+            display: flex;
+            justify-content: center;
+            .figure-card{
+                max-width: 747px;
+                width: 100%;
+                height: auto;
+                .figcaption-card{
+                   
+                }
+                .figure_text{
+                    line-height:23px ;
+                    padding-bottom: 25px;
+                }
+            }
+        }
+        .flex-col-figure-2{
+            display: flex;
+            justify-content: center;
+            .figure-card{
+                max-width: 420px;
+                width: 100%;
+                height: auto;
+                .figcaption-card{
+                    
+                }
+                .figure_text{
+                    line-height:23px ;
+                    padding-bottom: 25px;
+                }
+            }
+        }
+    }
+    .flex-row-figures.bottom{
+        align-items: flex-end;
+    }
+    .flex-row-figures.top{
+        align-items: flex-start;
+    }
+    @include respond(1550px){
+        padding: 60px 0px 100px 0px;
+    }
+    @include respond(tab-port){
+        padding: 55px 0px 70px 0px;
+    }
+    @include respond(900px){
+        .flex-row-figures.bottom{
+            align-items: center;
+        }
+        .flex-row-figures.top{
+            align-items: center;
+        }
+        .flex-row-figures{
+            .flex-col-figure-1{
+                .figure-card{
+                    max-width: unset;
+                    width: 500px;
+                    height: 400px;
+                    img{
+                        height: 395px;
+                    }
+                    .figure_text{
+                        
+                    }
+                }
+            }
+            .flex-col-figure-2{
+                .figure-card{
+                    max-width: unset;
+                    width: 500px;
+                    height: 400px;
+                    img{
+                        height: 395px;
+                    }
+                    .figure_text{
+                        
+                    }
+                }
+            }
+        }
+    }
+    @include respond(phone){
+        padding: 20px 0px 50px 0px;
+        .heading-main1{
+            font-size: 30px;
+            letter-spacing: -1.22px;
+        }
+        .flex-row-figures{
+            .flex-col-figure-1{
+                .figure-card{
+                    width: 100%;
+                    min-height: 360px;
+                    img{
+                        min-height: 355px;
+                    }
+                    .figure_text{
+                       
+                    }
+                }
+            }
+            .flex-col-figure-2{
+                .figure-card{
+                    width: 100%;
+                    min-height: 360px;
+                    .figure_text{
+                        
+                    }
+                    
+                }
+            }
+        }
+    }
+
+
+}
+.direction-section-6{
+    background: linear-gradient(170deg, #379CFF -14.88%, #8475FF 93.8%);
+    padding: 65px 0px 100px 0px;
+    .heading-main1{
+        // color: #fff;
+    }
+    .flex-row-figures{
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 50px;
+        .flex-col-figure-1{
+            display: flex;
+            justify-content: center;
+            .figure-card{
+                max-width: 516px;
+                width: 100%;
+                height: auto;
+                .figcaption-card{
+                   
+                }
+                .figure_text{
+                    line-height:23px ;
+                    padding-bottom: 25px;
+                }
+            }
+        }
+        .flex-col-figure-2{
+            display: flex;
+            justify-content: center;
+            .figure-card{
+                max-width: 430px;
+                width: 100%;
+                height: auto;
+                .figcaption-card{
+                    
+                }
+                .figure_text{
+                    line-height:20px ;
+                    padding-bottom: 20px;
                 }
             }
         }
@@ -477,6 +1042,14 @@ const direction_scroll_2_isInView = useIntersectionObserver(direction_scroll_2, 
                     max-width: unset;
                     width: 500px;
                     height: 400px;
+                    img{
+                        min-height: 395px;
+                    }
+                    .figure_text{
+                        font-size: 15px;
+                        line-height:25px ;
+                        padding-bottom: 25px;
+                    }
                 }
             }
             .flex-col-figure-2{
@@ -484,6 +1057,14 @@ const direction_scroll_2_isInView = useIntersectionObserver(direction_scroll_2, 
                     max-width: unset;
                     width: 500px;
                     height: 400px;
+                    img{
+                        height: 395px;
+                    }
+                    .figure_text{
+                        font-size: 15px;
+                        line-height:25px ;
+                        padding-bottom: 25px;
+                    }
                 }
             }
         }
@@ -499,12 +1080,22 @@ const direction_scroll_2_isInView = useIntersectionObserver(direction_scroll_2, 
                 .figure-card{
                     width: 100%;
                     min-height: 360px;
+                    img{
+                        // min-height: 355px;
+                    }
+                    .figure_text{
+                       
+                    }
                 }
             }
             .flex-col-figure-2{
                 .figure-card{
                     width: 100%;
                     min-height: 360px;
+                    .figure_text{
+                        
+                    }
+                    
                 }
             }
         }
