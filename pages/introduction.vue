@@ -377,6 +377,7 @@ const fig_card_expand_2_isInView = useIntersectionObserver(fig_card_expand_2, {t
         padding: 80px 0px 50px 0px;
         .heading-main1{
             font-size: 30px;
+            letter-spacing: -1.22px;
         }
         .flex-row-figures{
             .flex-col-figure{
@@ -419,6 +420,7 @@ const fig_card_expand_2_isInView = useIntersectionObserver(fig_card_expand_2, {t
             padding: 10px 0px 25px 0px;
             .heading-main1{
                 font-size: 30px;
+                letter-spacing: -1.22px;
             }
             .flex-img{
                 padding: 0px 6vw;
@@ -572,6 +574,7 @@ const fig_card_expand_2_isInView = useIntersectionObserver(fig_card_expand_2, {t
         padding: 15px 0px 40px 0px;
         .heading-main1{
             font-size: 30px;
+            letter-spacing: -1.22px;
         }
         .flex-row-figures{
             .flex-col-figure-1{
@@ -704,6 +707,7 @@ const fig_card_expand_2_isInView = useIntersectionObserver(fig_card_expand_2, {t
         padding: 15px 0px 40px 0px;
         .heading-main1{
             font-size: 30px;
+            letter-spacing: -1.22px;
         }
         .flex-row-figures{
             .flex-col-figure-1{
@@ -838,6 +842,7 @@ const fig_card_expand_2_isInView = useIntersectionObserver(fig_card_expand_2, {t
         padding: 15px 0px 40px 0px;
         .heading-main1{
             font-size: 30px;
+            letter-spacing: -1.22px;
         }
         .flex-row-figures{
             .flex-col-figure-1{
@@ -926,6 +931,7 @@ const fig_card_expand_2_isInView = useIntersectionObserver(fig_card_expand_2, {t
         padding: 10px 0px 40px 0px;
         .heading-main1{
             font-size: 30px;
+            letter-spacing: -1.22px;
         }
         .flex-row-figures{
             .flex-col-figure{
@@ -1052,6 +1058,7 @@ const fig_card_expand_2_isInView = useIntersectionObserver(fig_card_expand_2, {t
         padding: 15px 0px 40px 0px;
         .heading-main1{
             font-size: 30px;
+            letter-spacing: -1.22px;
         }
         .flex-row-figures{
             .flex-col-figure-1{
@@ -1191,6 +1198,7 @@ const fig_card_expand_2_isInView = useIntersectionObserver(fig_card_expand_2, {t
         padding: 15px 0px 40px 0px;
         .heading-main1{
             font-size: 30px;
+            letter-spacing: -1.22px;
         }
         .flex-row-global{
             padding: 0px 6vw;
