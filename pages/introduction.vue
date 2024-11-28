@@ -228,6 +228,54 @@
         </div>
 
     </section>
+    <section class="intro-section-9">
+        <div class="row1 u-center-text">
+            <h1 class="heading-main1"> Global Creator Ecosystem</h1>
+        </div>
+        <div class="flex-row-global">
+            <div class="flex-col-global-1">
+                <img class="global_img_1" src="@/assets/image/global_1.png" alt="global_1">
+                <p class="paragraph1">
+                    The Rise of the Creator Economy: By 2024, the global number of 
+                    content creators is expected to surpass 
+                    200 million, with short video creators accounting for over 50%.
+                </p>
+            </div>
+            <div class="flex-col-global-2">
+                <img class="global_img_2" src="@/assets/image/global_2.png" alt="global_2">
+                <p class="paragraph1">
+                    Professional Content Creation: High-quality content attracts more audiences, 
+                    and intelligent, versatile editing platforms are becoming critical for maintaining a competitive edge.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <section class="intro-section-10">
+        <!-- <div class="row1">
+            <h1 class="heading-main1">Content Licensing</h1>
+        </div> -->
+        <div class="flex-row">
+            <div class="flex-col-img">
+                <img ref="intro_expand_2" class="section_2_img" :class="{'expand-animation': intro_expand_2_isInView}" 
+                src="@/assets/image/potential.png" alt="section_2_img">
+            </div>
+            <div class="flex-col-text">
+                <h1 ref="intro_scroll_2" class="sub-title" :class="{'scrollInRight': intro_scroll_2_isInView}">
+                    Monetization Potential
+                </h1>
+                <p class="paragraph2">
+                    Substantial Earnings: With an annual growth rate of 20%, the short video ad market 
+                    presents significant revenue opportunities for creators. EditingStar facilitates earnings through ad sharing and partnerships.
+                    Diverse Revenue Streams: From viewership rewards to ad sharing and brand collaborations,
+                     creators can enjoy multiple sources of income.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
 </template>
 <script setup >
 import { useTemplateRef } from 'vue';
@@ -236,8 +284,14 @@ const intro_expand_1 = useTemplateRef('intro_expand_1')
 const intro_expand_1_isInView = useIntersectionObserver(intro_expand_1, {
   threshold: 0.01
 })
+const intro_expand_2 = useTemplateRef('intro_expand_2')
+const intro_expand_2_isInView = useIntersectionObserver(intro_expand_2, {
+  threshold: 0.01
+})
 const intro_scroll_1 = useTemplateRef('intro_scroll_1')
 const intro_scroll_1_isInView = useIntersectionObserver(intro_scroll_1, {threshold: 0.4})
+const intro_scroll_2 = useTemplateRef('intro_scroll_2')
+const intro_scroll_2_isInView = useIntersectionObserver(intro_scroll_2, {threshold: 0.4})
 const fig_card_expand_1 = useTemplateRef('fig_card_expand_1')
 const fig_card_expand_1_isInView = useIntersectionObserver(fig_card_expand_1, {threshold: 0.01})
 const fig_card_expand_2 = useTemplateRef('fig_card_expand_2')
@@ -1028,6 +1082,173 @@ const fig_card_expand_2_isInView = useIntersectionObserver(fig_card_expand_2, {t
             }
         }
 
+    }
+}
+.intro-section-9{
+   background-image: url('@/assets/image/global_bg.png'),linear-gradient(170deg, #3B4F05 -14.88%, #3B4F05 93.8%);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+    padding: 45px 0px 100px 0px;
+    .heading-main1{ 
+        color: #fff;
+    }
+    .flex-row-global{
+        max-width: $max-width-home;
+        margin: 35px auto 0px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 100px;
+        gap: 30px;
+        .flex-col-global-1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: stretch;
+            flex:0 0 45%;
+            .global_img_1{
+                width: 548px;
+                height: 505px;
+            }
+            .paragraph1{
+                margin-top: 20px;
+                color:#fff;
+            }
+        }
+        .flex-col-global-2{
+            align-self: stretch;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            flex:0 0 45%;
+            .global_img_2{
+                width: 548px;
+                height: 505px;
+            }
+            .paragraph1{
+                margin-top: 20px;
+                color: #fff;
+            }
+        }
+    }
+    @include respond(1550px){
+        .flex-row-global{
+            padding: 0px 80px;
+        }
+
+    }
+    @include respond(1170px){
+        .flex-row-global{
+            padding: 0px 60px;
+            .flex-col-global-1{
+                flex:0 0 48%;
+                .global_img_1{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .flex-col-global-2{
+                flex:0 0 41.5%;
+                .global_img_2{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    @include respond(tab-port){
+        padding: 35px 0px 70px 0px;
+        .flex-row-global{
+            padding: 0px 60px;
+        }
+    }
+    @include respond(900px){
+        .flex-row-global{
+            flex-direction: column;
+            .flex-col-global-1{
+                flex:0 0 100%;
+                align-items: center;
+                .global_img_1{
+                    max-width: 558px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .flex-col-global-2{
+                flex:0 0 100%;
+                align-items: center;
+                .global_img_2{
+                    max-width: 558px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    @include respond(phone){
+        padding: 15px 0px 40px 0px;
+        .heading-main1{
+            font-size: 30px;
+        }
+        .flex-row-global{
+            padding: 0px 6vw;
+        }
+
+    }
+}
+.intro-section-10{
+    background: linear-gradient(90deg, #4782F8 0%, #3AE6F0 100%);
+    padding: 60px 0px 100px 0px;
+    .row1{
+        text-align: left;
+        .heading-main1{
+            // color: $color-white;
+        }
+    }
+    .flex-row{
+        gap: 0px;
+        .flex-col-img{
+            .section_2_img{
+                max-width: 450px;
+                width: 100%;
+                clip-path: inset(40% round 20px);
+                
+            }
+        }
+        .flex-col-text{
+            .sub-title{
+                // color: $color-white;
+               margin-top: 0px;
+            }
+            .paragraph1{
+                // color: $color-white;
+               margin-top: 24px;
+            }
+            .paragraph2{
+                color: $color-black;
+               margin-top: 24px;
+            }
+        }
+        
+    }
+    @include respond(1400px){
+        .flex-row{
+            gap: 30px;
+        }
+    }
+    @include respond(1290px){
+        padding: 55px 0px 70px 0px;
+        .flex-row{
+            gap: 30px;
+        }
+    }
+    @include respond(tab-port){
+        padding: 45px 0px 50px 0px;
+    }
+    @include respond(phone){
+        padding: 25px 0px 40px 0px;
     }
 }
 </style>

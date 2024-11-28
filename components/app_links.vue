@@ -187,6 +187,9 @@ export default {
   animation: moveInLeft 0.5s ease-out 0.1s;
   animation-fill-mode: backwards;
 }
+.nav-item .dropdown-content .router-link-exact-active::after {
+display: none;
+}
 
 @media (max-width: 767px) {
   .nav-list {
