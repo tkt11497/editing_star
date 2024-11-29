@@ -258,6 +258,199 @@
         </div>
 
     </section>
+    <section class="direction-section-7">
+        <div class="row1 u-center-text">
+            <h1 class="heading-main1">Data Protection and Compliance</h1>
+        </div>
+        <div class="flex-row">
+            <div class="flex-col-img">
+                <img  class="section_2_img" 
+                src="@/assets/image/data_1.png" alt="section_2_img">
+            </div>
+            <div class="flex-col-text">
+                <!-- <h1  class="sub-title" >
+                    Content Licensing
+                </h1> -->
+                <p class="paragraph2">
+                    Amid the tightening of global data protection regulations,
+                     EditingStar will ensure platform compliance and user data security.
+                </p>
+
+            </div>
+
+        </div>
+        <div class="flex-row">
+            <div class="flex-col-text">
+                <!-- <h1  class="sub-title" >
+                    Content Licensing
+                </h1> -->
+                <p class="paragraph2">
+                    Privacy Protection: Adhere strictly to international 
+                    data protection standards like GDPR and CCPA to safeguard user privacy.
+                </p>
+
+            </div>
+            <div class="flex-col-img">
+                <img  class="section_2_img" 
+                src="@/assets/image/data_2.png" alt="section_2_img">
+            </div>
+
+        </div>
+        <div class="flex-row">
+            <div class="flex-col-img">
+                <img  class="section_2_img" 
+                src="@/assets/image/data_3.png" alt="section_2_img">
+            </div>
+            <div class="flex-col-text">
+                <!-- <h1  class="sub-title" >
+                    Content Licensing
+                </h1> -->
+                <p class="paragraph2">
+                    Copyright Compliance: Strengthen collaborations with copyright holders 
+                    to ensure legal use of materials and mitigate potential risks.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="direction-section-8">
+        <div class="row1 u-center-text">
+            <h1 class="heading-main1">Sustainability and Social Responsibility</h1>
+        </div>
+        <div class="flex-row-figures bottom">
+            <div class="flex-col-figure-1">
+                <figure  class="figure-card" >
+                    <img src="@/assets/image/social_1.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text">
+                        As a global platform, EditingStar will actively
+                         fulfill its social responsibilities
+                         and promote diversity and sustainability in content creation.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flex-col-figure-1">
+                <figure class="figure-card">
+                    <img src="@/assets/image/social_2.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text ">
+                        Green Creation: Advocate for low-carbon creation models
+                         to minimize resource wastage during video production.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="flex-row-figures top">
+            <div class="flex-col-figure-1">
+                <figure class="figure-card">
+                    <img src="@/assets/image/social_3.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text ">
+                        Cultural Diversity: Promote cultural content from 
+                        various regions to facilitate cultural exchange and integration.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flex-col-figure-1">
+                <figure  class="figure-card" >
+                    <img src="@/assets/image/social_4.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text">
+                        Public Welfare Collaboration: Partner with nonprofit 
+                        organizations to promote public welfare videos and raise societal awareness
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+    </section>
+    <section class="direction-section-9">
+        <div class="row1 u-center-text">
+            <h1 class="heading-main1">Core Features of the AI-Powered Editing System</h1>
+        </div>
+        <div class="flex-row-figures">
+            <div class="flex-col-figure-1">
+                <figure  class="figure-card top" >
+                    <img src="@/assets/image/core_1.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text">
+                        The AI-powered editing system is a critical 
+                        pillar of EditingStar’s future development, 
+                        designed to provide creators with a more efficient
+                         and user-friendly editing experience.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flex-col-figure-1">
+                <figure class="figure-card top">
+                    <img src="@/assets/image/core_2.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text higher ">
+                        AI-Recommended Editing Templates: Automatically suggest the
+                         best templates based on the type of video inputted by users.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flex-col-figure-1">
+                <figure class="figure-card top">
+                    <img src="@/assets/image/core_3.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text higher ">
+                        One-Click Video Styling: Apply filters, effects, and transitions
+                         automatically using AI to produce high-quality videos quickly.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="flex-row-figures">
+            <div class="flex-col-figure-1">
+                <figure class="figure-card bottom">
+                    <img src="@/assets/image/core_4.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text ">
+                        Smart Content Optimization: Detect and resolve video quality issues
+                         (e.g., underexposure, shaky footage) with minimal manual intervention.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flex-col-figure-1">
+                <figure  class="figure-card bottom" >
+                    <img src="@/assets/image/core_5.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text">
+                        Real-Time Content Analysis: Support real-time 
+                        analysis of video scenarios, actions,
+                         and dialogues to provide intelligent editing 
+                         suggestions for post-production.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+    </section>
+    <section class="direction-section-10">
+        <div class="row1 u-center-text">
+            <h1 class="heading-main1">Platform Vision</h1>
+        </div>
+        <div class="flex-row-figures">
+            <div class="flex-col-figure-1">
+                <figure class="figure-card">
+                    <img src="@/assets/image/platform_1.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text ">
+                        EditingStar’s vision is to become the global leader in short-video editing and 
+                        distribution by:Building a one-stop platform for global creators to create and monetize content.
+                        Driving innovation in the short-video industry through cutting-edge tools and features.
+                        Empowering content creators and enabling the creator economy to become a vital part of global economic growth.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="flex-col-figure-1">
+                <figure  class="figure-card" >
+                    <img src="@/assets/image/platform_2.png" alt="figure 1">
+                    <figcaption class="figcaption-card figure_text">
+                        Through its AI-powered editing system, global market expansion, technological
+                         innovation, and community building, EditingStar is set to 
+                         continuously enhance creators' video production capabilities, helping them
+                         achieve greater value while making short-video creation more efficient, simple, and enjoyable!
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+    </section>
 </template>
 <script setup >
 import { useTemplateRef } from 'vue';
@@ -1096,6 +1289,373 @@ const direction_scroll_2_isInView = useIntersectionObserver(direction_scroll_2, 
                         
                     }
                     
+                }
+            }
+        }
+    }
+
+
+}
+.direction-section-7{
+    background: linear-gradient(180deg, #ECEBFA 0%, #A19AFF 100%);
+    padding: 65px 0px 100px 0px;
+    .row1{
+        margin-bottom: 30px;
+        .heading-main1{
+            // color: $color-white;
+        }
+    }
+    .flex-row{
+        margin: 0px auto 0px auto;
+        .flex-col-img{
+            .section_2_img{
+                max-width: 549px;
+                width: 100%;
+                // clip-path: inset(40% round 20px);
+                
+            }
+        }
+        .flex-col-text{
+            flex:0 0 40%;
+            .sub-title{
+                color: $color-white;
+               margin-top: 0px;
+            }
+            .paragraph1{
+                // color: $color-white;
+               margin-top: 24px;
+            }
+            .paragraph2{
+                color: $color-black;
+            //    margin-top: 24px;
+            }
+        }
+        
+    }
+    @include respond(1290px){
+        padding: 60px 0px 70px 0px;
+    }
+    @include respond(tab-port){
+        padding: 50px 0px 50px 0px;
+        .flex-row{
+            gap: 0px;
+        }
+    }
+    @include respond(phone){
+        padding: 30px 0px 40px 0px;
+        .heading-main1{
+            font-size: 30px;
+            letter-spacing: -1.22px;
+        }
+        .flex-row{
+            gap: 0px;
+        }
+    }
+}
+.direction-section-8{
+    background: #000;
+    padding: 65px 0px 100px 0px;
+    .heading-main1{
+        color: #fff;
+    }
+    .flex-row-figures{
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 40px;
+        .flex-col-figure-1{
+            display: flex;
+            justify-content: center;
+            .figure-card{
+                max-width: 516px;
+                width: 100%;
+                height: auto;
+                .figcaption-card{
+                   
+                }
+                .figure_text{
+                    font-size: 14px;
+                    line-height:23px ;
+                    padding-bottom: 25px;
+                }
+            }
+        }
+    }
+    @include respond(1550px){
+        padding: 60px 0px 100px 0px;
+    }
+    @include respond(tab-port){
+        padding: 55px 0px 70px 0px;
+    }
+    @include respond(900px){
+        .flex-row-figures{
+            .flex-col-figure-1{
+                .figure-card{
+                    max-width: unset;
+                    width: 500px;
+                    // height: 400px;
+                    img{
+                        // min-height: 395px;
+                    }
+                    .figure_text{
+                        font-size: 15px;
+                        line-height:25px ;
+                        padding-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+    @include respond(phone){
+        padding: 20px 0px 50px 0px;
+        .heading-main1{
+            font-size: 30px;
+            letter-spacing: -1.22px;
+        }
+        .flex-row-figures{
+            .flex-col-figure-1{
+                .figure-card{
+                    width: 100%;
+                    min-height: 360px;
+                    img{
+                        // min-height: 355px;
+                    }
+                    .figure_text{
+                        font-size: 14px;
+                        line-height:25px ;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+.direction-section-9{
+    background: linear-gradient(180deg, #ECEBFA 0%, #A19AFF 100%);
+    padding: 65px 0px 100px 0px;
+    .heading-main1{
+        // color: #fff;
+    }
+    .flex-row-figures{
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 8px;
+        .flex-col-figure-1{
+            display: flex;
+            justify-content: center;
+            .figure-card.top{
+                max-width: 476px;
+                width: 100%;
+                height: auto;
+                .figcaption-card{
+                   
+                }
+                .figure_text{
+                    font-size: 15px;
+                    line-height:28px ;
+                    padding-bottom: 25px;
+                }
+                .figure_text.higher{
+                    line-height:30px ;
+                    padding-top: 16px;
+                    padding-bottom: 43px;
+                }
+            }
+            .figure-card.bottom{
+                max-width: 692px;
+                width: 100%;
+                height: auto;
+                .figcaption-card{
+                   
+                }
+                .figure_text{
+                    font-size: 15px;
+                    line-height:25px ;
+                    padding-bottom: 25px;
+                }
+            }
+        }
+    }
+    @include respond(1550px){
+        padding: 60px 0px 100px 0px;
+    }
+    @include respond(tab-land){
+        .flex-row-figures{
+            .flex-col-figure-1{
+                .figure-card.top{
+                    .figure_text{
+                        font-size: 14px;
+                        line-height:20px ;
+                        padding-bottom: 20px;
+                    }
+                    .figure_text.higher{
+                        line-height:20px ;
+                        padding-top: 16px;
+                        padding-bottom: 33px;
+                    }
+                }
+            }
+        }
+    }
+    @include respond(tab-port){
+        padding: 55px 0px 70px 0px;
+    }
+    @include respond(900px){
+        .flex-row-figures{
+            gap:15px;
+            .flex-col-figure-1{
+                .figure-card.top{
+                    max-width: unset;
+                    width: 500px;
+                    height: 400px;
+                    img{
+                        min-height: 430px;
+                    }
+                    .figure_text{
+                        font-size: 15px;
+                        line-height:25px ;
+                        padding-bottom: 25px;
+                    }
+                }
+                .figure-card.bottom{
+                    max-width: unset;
+                    width: 500px;
+                    // height: 400px;
+                    img{
+                        // min-height: 395px;
+                    }
+                    .figure_text{
+                        font-size: 15px;
+                        line-height:25px ;
+                        padding-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+    @include respond(phone){
+        padding: 20px 0px 50px 0px;
+        .heading-main1{
+            font-size: 30px;
+            letter-spacing: -1.22px;
+        }
+        .flex-row-figures{
+            .flex-col-figure-1{
+                .figure-card.top{
+                    width: 100%;
+                    min-height: 360px;
+                    img{
+                        // min-height: 355px;
+                    }
+                    .figure_text{
+                        font-size: 14px;
+                        line-height:25px ;
+                        padding-bottom: 20px;
+                    }
+                }
+                .figure-card.bottom{
+                    width: 100%;
+                    min-height: 360px;
+                    img{
+                        min-height: 305px;
+                    }
+                    .figure_text{
+                        font-size: 14px;
+                        line-height:25px ;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+.direction-section-10{
+    background: linear-gradient(90deg, #4782F8 0%, #3AE6F0 100%);
+    padding: 65px 0px 100px 0px;
+    .heading-main1{
+        color: #fff;
+    }
+    .flex-row-figures{
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 50px;
+        .flex-col-figure-1{
+            display: flex;
+            justify-content: center;
+            .figure-card{
+                max-width: 689px;
+                width: 100%;
+                height: auto;
+                .figcaption-card{
+                   
+                }
+                .figure_text{
+                    font-size: 15px;
+                    line-height:25px ;
+                    padding-bottom: 25px;
+                }
+            }
+        }
+    }
+    @include respond(1550px){
+        padding: 60px 0px 100px 0px;
+    }
+    @include respond(tab-land){
+        padding: 55px 0px 70px 0px;
+        .flex-row-figures{
+            gap:25px;
+            .flex-col-figure-1{
+                    .figure-card{
+                        .figure_text{
+                            font-size: 14px;
+                            line-height:23px ;
+                        }
+                    }
+                }
+        }
+    }
+    @include respond(900px){
+        .flex-row-figures{
+            gap:15px;
+            .flex-col-figure-1{
+                .figure-card{
+                    max-width: unset;
+                    width: 500px;
+                    // height: 400px;
+                    img{
+                        // min-height: 395px;
+                    }
+                    .figure_text{
+                        font-size: 15px;
+                        line-height:25px ;
+                        padding-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+    @include respond(phone){
+        padding: 20px 0px 50px 0px;
+        .heading-main1{
+            font-size: 30px;
+            letter-spacing: -1.22px;
+        }
+        .flex-row-figures{
+            .flex-col-figure-1{
+                .figure-card{
+                    width: 100%;
+                    min-height: 360px;
+                    img{
+                        // min-height: 355px;
+                    }
+                    .figure_text{
+                        font-size: 12px;
+                        line-height:normal ;
+                        padding-bottom: 20px;
+                    }
                 }
             }
         }
