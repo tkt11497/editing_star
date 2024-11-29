@@ -14,7 +14,7 @@
       </div>
     </li>
     <li class="nav-item">
-      <NuxtLink to="/equity_directive">News & Media</NuxtLink>
+      <NuxtLink to="/news_and_media">News & Media</NuxtLink>
     </li>
     <li class="nav-item ">
       <NuxtLink to="/community">Community</NuxtLink>
@@ -25,7 +25,7 @@
     </li>
 
     <li class="nav-item ">
-      <NuxtLink to="/life-at-msfl" style="position: relative;">
+      <NuxtLink to="/user_guide" style="position: relative;">
         User Guide
       </NuxtLink>
     </li>

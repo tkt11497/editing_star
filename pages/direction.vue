@@ -1417,7 +1417,7 @@ const direction_scroll_2_isInView = useIntersectionObserver(direction_scroll_2, 
                     width: 100%;
                     min-height: 360px;
                     img{
-                        // min-height: 355px;
+                        min-height: 270px;
                     }
                     .figure_text{
                         font-size: 14px;

@@ -17,17 +17,17 @@
         </div>
     </li>
     <li class="navigation__item accordion">
-        <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/contact-us">News & Media</NuxtLink>
+        <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/news_and_media">News & Media</NuxtLink>
     </li>
     <li class="navigation__item accordion">
         <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/community">Community</NuxtLink>
     </li>
 
     <li class="navigation__item accordion">
-        <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/contact-us">Classroom</NuxtLink>
+        <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/classroom">Classroom</NuxtLink>
     </li>
     <li class="navigation__item accordion" >
-        <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/contact-us">User Guide</NuxtLink>
+        <NuxtLink @click="$emit('close_nav')" class="navigation__link" to="/user_guide">User Guide</NuxtLink>
     </li>
 </ul>
 </template>
