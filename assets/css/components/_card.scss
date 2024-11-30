@@ -213,26 +213,7 @@
 
 }
 .blue-card{
-    background-color: #E8F7FF;
     position: relative;
-    text-align: center;
-    min-height: 205px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &-text{
-        width: 90%;
-        color: $color-black;
-        font-family: Roboto;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 21.6px;
-        text-transform: capitalize;
-        margin-top: 15px;
-    }
     &:after{
         content: '';
         position: absolute;

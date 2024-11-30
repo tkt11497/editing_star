@@ -381,5 +381,66 @@
             }
         }
     }
+    @include respond(phone){
+        .flex-content{
+            padding: 90px 6vw 50px 6vw;
+            .writer_text{
+                font-size: 13px;
+                margin-top: 12px;
+                }
+                .content_title{
+                    font-size: 23px;
+                    line-height: 30px;
+                    margin-top: 10px;
+                }
+                .content_date{
+                    font-size: 12px;
+                    line-height: 18px;
+                    margin-top: 20px;
+                }
+                .content_image{
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                }
+                .sub_title{
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                }
+                .content_text{
+                    font-size: 16px;
+                    line-height: 24px;
+                    .content_text_title{
+                        padding-top: 16px;
+                    }
+                    .content_text_number{
+                        padding: 0px 10px;
+                        font-size: 14px;
+                        line-height: 13.882px;
+                    }
+                }
+        }
+        .flex-list{
+            padding: 30px 5vw 30px 5vw;
+            .list_title{
+                font-size: 24px;
+            }
+            .list_item{
+                gap: 18px;
+                .list_text{
+                    gap: 10px;
+                    .list_text_title{
+                        font-size: 13px;
+                        line-height: 110%; /* 20.8px */
+                    }
+                    .list_text_preview{
+                        font-size: 11px;
+                    }
+                    .list_text_date{
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
 }
 </style>
