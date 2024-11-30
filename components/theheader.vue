@@ -47,7 +47,9 @@
 onMounted(() => {
   
 })
+if(process.client){
 let lastScroll = window.scrollY;
+
   onMounted(() => {
     window.addEventListener('scroll', () => {
       const navbar = document.getElementById('navbar')
@@ -61,6 +63,7 @@ let lastScroll = window.scrollY;
       lastScroll = window.scrollY;
     })
   });
+}
 
 </script>
   

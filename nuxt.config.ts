@@ -15,7 +15,7 @@ export default defineNuxtConfig({
       // link: [{ rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' }]
     }
   },
-  ssr: false,
+  ssr: true,
   modules: ['@nuxtjs/tailwindcss'],
   compatibilityDate: '2024-04-03',
   css: ['~/assets/css/index.css','~/assets/css/tailwind.css','~/assets/css/init.scss'],

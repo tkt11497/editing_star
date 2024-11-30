@@ -10,15 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@tsparticles/vue3": "^3.0.1",
-    "apexcharts": "^4.0.0",
     "axios": "^1.7.7",
     "nuxt": "^3.14.159",
-    "tsparticles": "^3.5.0",
     "vant": "4.9.5",
     "vue": "latest",
-    "vue-router": "latest",
-    "vue3-apexcharts": "^1.7.0"
+    "vue-router": "latest"
   },
   "devDependencies": {
     "@vant/auto-import-resolver": "^1.2.1",
