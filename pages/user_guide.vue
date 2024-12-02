@@ -145,10 +145,17 @@
     }
     @include respond(1550px){
         .user_guide_nav{
-            flex: 0 0 23%;
+            flex: 0 0 20%;
         }
         .user_guide_content{
-           flex: 0 0 77%;
+           flex: 0 0 80%;
+            .guide_list{
+                .guide_item{
+                    width: 353px;
+                    height: 262px;
+                    padding: 20px;
+                }
+            }
         }
     }
     @include respond(tab-port){
