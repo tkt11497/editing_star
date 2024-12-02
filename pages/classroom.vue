@@ -1,11 +1,11 @@
 <template>
  <div class="classroom">
-    <div class="class_room_tab">
+    <!-- <div class="class_room_tab">
         <div class="tab_item tab_item_active">Tiro</div>
         <div class="tab_item">Hot</div>
         <div class="tab_item">Free</div>
         <div class="tab_item">Teaching</div>
-    </div>
+    </div> -->
     <div class="video_list">
         <div class="video_item" v-for="item in v_list" :key="item.id" @click="$router.push(`/videos/${item.id}`)">
             <img :src="`https://img.youtube.com/vi/${item.id}/hqdefault.jpg`" alt="vc photo">

@@ -76,7 +76,7 @@
                      EditingStar’s one-click export and multi-platform presets are a lifesaver! Whether it's YouTube, Instagram,
                      or TikTok, I can select the appropriate format and aspect ratio, and the system takes care of the rest. 
                      The real-time preview feature is also a great touch, letting me see the
-                     final result instantly without the need for lengthy renders. This tool has significantly boosted my productivity!"
+                     final result instantly without the need for lengthy renders. This tool has significantly boosted my productivity!
                 </p>
 
             </div>
