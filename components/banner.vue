@@ -3,8 +3,13 @@
     <!-- <div class="over-lay"></div> -->
     <!-- <img src="@/assets/image/banner.jpg" alt="Banner" class="banner-img"> -->
      <div class="bg-video">
-        <video class="bg-video__content" autoplay muted loop>
-                        <source src="/bg_video.mp4" type="video/mp4">
+        <video class="bg-video__content" 
+                autoplay 
+                muted 
+                loop
+                playsinline
+                preload="auto">
+            <source src="/bg_video.mp4" type="video/mp4">
                         Your browser is not supported!
         </video>
      </div>
