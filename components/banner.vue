@@ -1,7 +1,13 @@
 <template>
   <div class="banner">
-    <div class="over-lay"></div>
-    <img src="@/assets/image/banner.jpg" alt="Banner" class="banner-img">
+    <!-- <div class="over-lay"></div> -->
+    <!-- <img src="@/assets/image/banner.jpg" alt="Banner" class="banner-img"> -->
+     <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+                        <source src="/bg_video.mp4" type="video/mp4">
+                        Your browser is not supported!
+        </video>
+     </div>
     <div class="banner-content-box">
         <h1 class="heading-primary--main">Editingstar</h1>
         <h3 class="heading-primary--sub">Unlock Your Creativity with Editingstar</h3>

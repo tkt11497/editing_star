@@ -1,12 +1,11 @@
 .bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
     width: 100%;
-    z-index: -1;
-    opacity: .15;
+    object-fit: cover;
+    height: 100%;
+    z-index: 0;
     overflow: hidden;
+    clip-path: inset(120px 0% 110px 0% round 20px); 
+    opacity: .55;
 
     &__content {
         height: 100%;
