@@ -2,103 +2,30 @@
     <div class="news-and-media">
         <div class="flex-content">
             <p class="writer_text">News</p>
-            <h1 class="content_title">HFTT Launches Editingstar :  Video Editing Made Easy</h1>
-            <p class="content_date">July 2024</p>
-            <p class="writer_text">By Tobe</p>
-            <img src="/image/news_1.png" alt="news_and_media_1" class="content_image">
-            <h3 class="sub_title">Press Releases</h3>
-            <p class="content_text">
-                <span class="content_text_title">
-                    Press Releases
-                    <span class="content_text_number">1</span>
-                </span>
-                <br>
-                <span>Date: August 10, 2024</span>
-                <br>
-                <span>
-                    Editingstar has officially launched its new AI-powered video editing platform, enhancing video creation’s 
-                    automation and intelligence. Integrating advanced features like AI editing, speech recognition, and auto-translation, 
-                    the platform aims to save time and boost efficiency for global creators. With feedback-driven adjustments, Editingstar  
-                    expects to attract more professional creators and corporate users in the coming months.
-                </span>
-                <br>
-                <!-- ----------one paragraph---------- -->
-                <span class="content_text_title">
-                    Press Releases
-                    <span class="content_text_number">2</span>
-                </span>
-                <br>
-                <span>Date: September 5, 2024</span>
-                <br>
-                <span>
-                    Editingstar  announced successful completion of a $50 million Series A funding, which 
-                    will accelerate R&D in AI video editing technology and expand its presence, 
-                    especially in North American and European markets.
-
-                </span>
-                <br>
-                 <!-- ----------one paragraph---------- -->
-                 <span class="content_text_title">
-                    Press Releases
-                    <span class="content_text_number">3</span>
-                </span>
-                <br>
-                <span>Date: October 15, 2024</span>
-                <br>
-                <span>
-                    Editingstar  has entered strategic 
-                    partnership discussions
-                     with leading global 
-                    brands to develop AI-driven video creation solutions, extending its global market presence.
-
-                </span>
-                <br>
-                <!-- ----------one paragraph---------- -->
-                <span class="content_text_title">
-                    Press Releases
-                    <span class="content_text_number">4</span>
-                </span>
-                <br>
-                <span>Date: November 1, 2024</span>
-                <br>
-                <span>               
-                    Following significant technical updates, 
-                    Editingstar  global user satisfaction is rising as users praise AI 
-                    video editing functionality and user experience enhancements.
-                </span>
-                <br>
-                 <!-- ----------one paragraph---------- -->
-                 <span class="content_text_title">
-                    Press Releases
-                    <span class="content_text_number">5</span>
-                </span>
-                <br>
-                <span>Date: December 10, 2024</span>
-                <br>
-                <span>               
-                    Editingstar  signed long-term agreements
-                     with multiple renowned companies,
-                     providing custom AI tools 
-                    and solutions to enhance content production in advertising and marketing.
-                </span>
-                <br>
-            </p>
+            <h1 class="content_title">{{ selectedNews.title }}</h1>
+            <p class="content_date">{{ formatDate(selectedNews.created_at) }}</p>
+            <p class="writer_text">By {{ selectedNews.author }}</p>
+            <img :src="selectedNews.image_url" alt="news_and_media_1" class="content_image">
+            <h3 class="sub_title">{{ selectedNews.sub_title || 'Press Releases' }}</h3>
+            <div class="content_text" >
+                <p v-html="selectedNews.content"></p>
+            </div>
         </div>
         <div class="flex-list">
             <h2 class="list_title">More News</h2>
-            <div class="list_item" v-for="item in 8">
+            <div class="list_item" v-for="(item, index) in newsData" :key="index" @click="selectedNewsIndex = index">
                 <div class="list_image">
-                    <img src="/image/news_list.png" alt="news_and_media_2">
+                    <img :src="item.image_url" alt="news_and_media_2">
                 </div>
                 <div class="list_text">
                     <p class="list_text_title">
-                        HFTT Launches Editingstar: Video Editing Made Easy
+                        {{item.title}}
                     </p>
                     <p class="list_text_preview">
-                        HFTT Launches Editingstar: Video Editing Made Easy
+                        {{ item.content.replace(/<[^>]*>/g, '').replace(/&nbsp;|&#160;/g, ' ').substring(0, 50) }}...
                     </p>
                     <p class="list_text_date">
-                        Tobe July 2024
+                        {{item.author}} {{formatDate(item.created_at)}}
                     </p>
                 </div>
             </div>
@@ -106,7 +33,29 @@
     </div>
 </template>
 <script setup>
+import axios from 'axios'
+import dayjs from 'dayjs'
 
+
+const formatDate = (date) => {
+    return dayjs(date).format('MMM YYYY')
+}
+const selectedNews = computed(() => {
+    return newsData.value.length > 0 ? newsData.value[selectedNewsIndex.value] : {}
+})
+const selectedNewsIndex = ref(0)
+const newsData = ref([])
+const getNews = async () => {
+    await axios.get('https://admin.editingstar.com/api/news').then(res => {
+        if(res.status == 200){
+            newsData.value = res.data.data
+            console.log(newsData.value)
+        }
+    }).catch(err => {
+        console.log(err)
+    })
+}
+getNews()
 </script>
 <style scoped lang="scss">
 .news-and-media{
@@ -172,6 +121,7 @@
             font-style: normal;
             font-weight: 400;
             line-height: 28px;
+            padding-top: 20px;
             .content_text_title{
                 font-weight: 500;
                 display: inline-block;
@@ -210,6 +160,7 @@
             padding: 25px 0px;
             gap: 25px;
             border-bottom: 2px solid #757575;
+            cursor: pointer;
             // width: 480px;
             // height: 170px;
             align-items: center;
@@ -220,6 +171,7 @@
                     width: 100%;
                     max-width: 140px;
                     max-height: 120px;
+                    min-height: 100px;
                     height: auto;
                 }
             }
@@ -228,6 +180,7 @@
                 flex-direction: column;
                 justify-content: space-between;
                 align-self: stretch;
+                gap: 15px;
                 .list_text_title{
                     color: #FFF;
                     font-family: 'Roboto';
@@ -286,6 +239,7 @@
                 .content_text{
                     font-size: 18px;
                     line-height: 28px;
+                    padding-top: 18px;
                     .content_text_title{
                         padding-top: 18px;
                     }
@@ -303,6 +257,11 @@
             }
             .list_item{
                 gap: 20px;
+                .list_image{ 
+                    img{
+                        min-height: unset;
+                    }
+                }
                 .list_text{
                     gap: 10px;
                     .list_text_title{
@@ -409,6 +368,7 @@
                 .content_text{
                     font-size: 16px;
                     line-height: 24px;
+                    padding-top: 16px;
                     .content_text_title{
                         padding-top: 16px;
                     }
