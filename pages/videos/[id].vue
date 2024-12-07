@@ -1,18 +1,27 @@
 <template>
     <div class="video_page">
-        <iframe class="video_container"
+        <!-- <iframe class="video_container"
         :src="`https://www.youtube.com/embed/${id}`" 
         title="YouTube video player" frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; 
         encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen></iframe>
-        <h1 class="video_title">How to Make Learning as Addictive as Social Media | Duolingo's Luis Von Ahn | TED</h1>
+        allowfullscreen></iframe> -->
+        <video class="video_container" :src="selectedVideo?.video_url" controls></video>
+        <h1 class="video_title">{{ selectedVideo?.title }}</h1>
     </div>
 </template>
 <script setup>
+const router = useRouter()
 const route = useRoute();
 const id = route.params.id;
+let selectedVideo = ref({})
+if(localStorage.getItem('v_list')){
+    const v_list = JSON.parse(localStorage.getItem('v_list'))
+    selectedVideo.value = v_list.find(item => item.id == id)
+}else{
+    router.push('/classroom')
+    }
 </script>
 <style scoped lang="scss">
 .video_page{

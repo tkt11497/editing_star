@@ -11,7 +11,7 @@
             <p class="content_subtitle">Use Editingstar and learn how to edit efficiently</p>
             <h2 class="user_guide_title">Getting Started</h2>
             <div class="guide_list">
-                <div class="guide_item">
+                <div class="guide_item" @click="openDownloadLink('android')">
                     <span></span>
                     <img src="@/assets/image/download_icon.svg" alt="download_icon">
                     <p class="guide_text_1">Download Editingstar</p>
@@ -32,7 +32,28 @@
     </div>
 </template>
 <script setup>
-
+import axios from 'axios'
+let android_downloadLink = ref('')
+let ios_downloadLink = ref('')
+const getDownloadLink = async () => {
+    await axios.get('https://admin.editingstar.com/api/app-link').then(res => {
+        if(res.data){
+            console.log(res.data)
+            android_downloadLink.value = res.data.data[0].android_link
+            ios_downloadLink.value = res.data.data[0].ios_link
+        }
+    }).catch(err => {
+        console.log(err)
+    })
+}
+const openDownloadLink = (os) => {
+    if(os == 'android'){
+        window.open(android_downloadLink.value, '_blank')
+    }else{
+        window.open(ios_downloadLink.value, '_blank')
+    }
+}
+getDownloadLink()
 </script>
 <style scoped lang="scss">
 .user_guide{

@@ -6,57 +6,78 @@
         <div class="tab_item">Free</div>
         <div class="tab_item">Teaching</div>
     </div> -->
-    <div class="video_list">
+    <!-- <div class="video_list">
         <div class="video_item" v-for="item in v_list" :key="item.id" @click="$router.push(`/videos/${item.id}`)">
             <img :src="`https://img.youtube.com/vi/${item.id}/hqdefault.jpg`" alt="vc photo">
             <p class="video_title">How to Make Learning as Addictive as Social Media | Duolingo's Luis Von Ahn | TED</p>
+        </div>
+    </div> -->
+    <div class="video_list">
+        <div class="video_item" v-for="(item,index) in v_list" :key="item.id" @click="$router.push(`/videos/${item.id}`)">
+            <img :src="item.video_image_url" alt="vc photo">
+            <p class="video_title">{{ item.title }}</p>
         </div>
     </div>
  </div>
 </template>
 <script setup>
-const v_list=ref([
-    {
-        id:"P6FORpg0KVo"
-    },
-    {
-        id:"P6FORpg0KVo"
-    },
-    {
-        id:"P6FORpg0KVo"
-    },
-    {
-        id:"P6FORpg0KVo"
-    },
-    {
-        id:"P6FORpg0KVo"
-    },
-    {
-        id:"P6FORpg0KVo"
-    },
-    {
-        id:"P6FORpg0KVo"
-    },
-    {
-        id:"P6FORpg0KVo"
-    },
-    {
-        id:"hT_nvWreIhg"
-    },
-    {
-        id:"B5fzkq7JRfA"
-    },
-    {
-        id:"xuyEr8ghIdg"
-    },
-    {
-        id:"JcjYZ6xjYtI"
-    },
-    {
-        id:"r1Fx0tqK5Z4"
-    },
+import axios from 'axios'
+// const v_list=ref([
+//     {
+//         id:"P6FORpg0KVo"
+//     },
+//     {
+//         id:"P6FORpg0KVo"
+//     },
+//     {
+//         id:"P6FORpg0KVo"
+//     },
+//     {
+//         id:"P6FORpg0KVo"
+//     },
+//     {
+//         id:"P6FORpg0KVo"
+//     },
+//     {
+//         id:"P6FORpg0KVo"
+//     },
+//     {
+//         id:"P6FORpg0KVo"
+//     },
+//     {
+//         id:"P6FORpg0KVo"
+//     },
+//     {
+//         id:"hT_nvWreIhg"
+//     },
+//     {
+//         id:"B5fzkq7JRfA"
+//     },
+//     {
+//         id:"xuyEr8ghIdg"
+//     },
+//     {
+//         id:"JcjYZ6xjYtI"
+//     },
+//     {
+//         id:"r1Fx0tqK5Z4"
+//     },
 
-])
+// ])
+const v_list = ref([])
+const getVideos = async () => {
+    await axios.get('https://admin.editingstar.com/api/video-classroom').then(res => {
+        if(res.data){
+            console.log(res.data)
+            v_list.value = res.data.data
+            console.log(v_list.value)
+            localStorage.setItem('v_list', JSON.stringify(v_list.value))
+        }
+    }).catch(err => {
+        console.log(err)
+    })
+}
+getVideos()
 </script>
 <style scoped lang="scss">
 .classroom{
