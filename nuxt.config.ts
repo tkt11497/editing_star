@@ -32,6 +32,7 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'zh',
     lazy: true,
+    detectBrowserLanguage: false,
     langDir: 'locales/',
     strategy: 'prefix',
   },

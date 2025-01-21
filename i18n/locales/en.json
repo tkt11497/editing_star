@@ -14,5 +14,6 @@
     "Username cannot be empty.": "Username cannot be empty.",
     "Password cannot be empty.": "Password cannot be empty.",
     "Identifying Code cannot be empty.": "Identifying Code cannot be empty.",
-    "Wrong check code": "Wrong check code"
+    "Wrong check code": "Wrong check code",
+    "语言": "Language"
   }
