@@ -16,7 +16,25 @@ export default defineNuxtConfig({
     }
   },
   ssr: false,
-  modules: ['@element-plus/nuxt'],
+  modules: ['@element-plus/nuxt','@nuxtjs/i18n'],
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        name: 'English',
+        file: 'en.json'
+      },
+      {
+        code: 'zh',
+        name: '中文简体',
+        file: 'zh.json'
+      }
+    ],
+    defaultLocale: 'zh',
+    lazy: true,
+    langDir: 'locales/',
+    strategy: 'prefix',
+  },
   compatibilityDate: '2024-04-03',
   css: ['~/assets/css/index.css','~/assets/css/init.scss'],
   plugins: [

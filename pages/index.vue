@@ -4,22 +4,22 @@
         <div class="left"></div>
         <div class="login-box">
             <img src="@/assets/image/logo.png" alt="logo" class="login-box-logo">
-            <h2 class="login-box-title">亚星管理平台 </h2>
+            <h2 class="login-box-title">{{ $t('title') }} </h2>
             <div class="login-row">
                 <i class="icon1"></i>
-                <input v-model="username" autocomplete="off" type="text" placeholder="账号" class="login-row-input">
+                <input v-model="username" autocomplete="off" type="text" :placeholder="`${$t('Account No.')}`" class="login-row-input">
             </div>
             <div class="login-row">
                 <i class="icon2"></i>
-                <input v-show="!showPassword" autocomplete="off" type="password" placeholder="密码" class="login-row-input" v-model="password">
-                <input v-show="showPassword" autocomplete="off" type="text" placeholder="密码" class="login-row-input" v-model="password">
+                <input v-show="!showPassword" autocomplete="off" type="password" :placeholder="`${$t('Password')}`" class="login-row-input" v-model="password">
+                <input v-show="showPassword" autocomplete="off" type="text" :placeholder="`${$t('Password')}`" class="login-row-input" v-model="password">
                 
                 <i class="eye" v-if="!showPassword" @click="showPassword=!showPassword"></i>
                 <i class="eye-show" v-else @click="showPassword=!showPassword"></i>
             </div>
             <div class="login-row">
                 <i class="icon3"></i>
-                <input v-model="scode" autocomplete="off" type="text" placeholder="验证码" class="login-row-input">
+                <input v-model="scode" autocomplete="off" type="text" :placeholder="`${$t('Identifying Code')}`" class="login-row-input">
                 <div class="login-row-code">
                     <img @click="code_num=generateNumber()" :src="`/image/cp${code_num}.png`" alt="code" class="login-row-code-img">
                 </div>
@@ -27,16 +27,17 @@
             <div class="login-row flex-lang">
                 <div>
                     <i class="icon4"></i>
-                    <p class="lang-title">语言选择</p>
+                    <p class="lang-title">{{ $t('Language Selection') }}</p>
                 </div>
                 <div style="margin-right: 10px;">
-                    <i class="zh_img"></i>
-                    <!-- <i class="en_img"></i> -->
+                    <i v-if="$i18n.locale==='zh'" class="zh_img"></i>
+                    <i v-if="$i18n.locale==='en'" class="en_img"></i>
                     <el-select
                         v-model="value"
-                        placeholder="中文简体"
+                        :placeholder="`${$t('lan_select')}`"
                         size="small"
                         style="width: 100px"
+                        @change="changeLang"
                         >
                         <el-option
                             v-for="item in options"
@@ -48,12 +49,12 @@
                 </div>
             </div>
             <div>
-                <el-checkbox v-model="checked5" label="记住我" style="margin: 0px 0px 25px; color: rgb(255, 255, 255);"  />
+                <el-checkbox v-model="checked5" :label="`${$t('Remember Me')}`" style="margin: 0px 0px 25px; color: rgb(255, 255, 255);"  />
             </div>
-            <button @click="login" class="login-btn">登录</button>
+            <button @click="login" class="login-btn">{{ $t('Login') }}</button>
             <div class="login-footer">
                 <p>2.4.12.4.3</p>
-                <p style="padding-top: 8px;">推荐使用谷歌浏览器</p>
+                <p style="padding-top: 8px;">{{ $t('Google Chrome is recommended') }}</p>
             </div>
            
         </div>
@@ -65,12 +66,26 @@
 
 <script setup>
 import { ElMessage, ElMessageBox } from 'element-plus'
-
+const { locale, locales } = useI18n()
+const { t } = useI18n()
+const availableLocales = computed(() => {
+  return (locales.value).map(i => ({
+    code: i.code,
+    name: i.name
+  }))
+})
+const changeLang = (code) => {
+    // console.log(code)
+    locale.value = code
+    // navigateTo(`/${code}`)
+    window.location.href = `/${code}`
+    // window.location.reload()
+}
 const open = (msg) => {
-  ElMessageBox.alert(msg, '温馨提示', {
+    ElMessageBox.alert(msg, t('Reminder'), {
     // if you want to disable its autofocus
     // autofocus: false,
-    confirmButtonText: '确定',
+    confirmButtonText: t('OK'),
     type: 'warning',
     // callback: (action) => {
     //   ElMessage({
@@ -99,11 +114,11 @@ const username = ref('')
 const scode = ref('')
 const options = [
   {
-    value: '中文简体',
+    value: 'zh',
     label: '中文简体',
   },
   {
-    value: 'English',
+    value: 'en',
     label: 'English',
   },
 ]
@@ -115,22 +130,22 @@ const login = () => {
     console.log(username.value,password.value,scode.value)
     if(!username.value) 
     {
-        open('用户名不能为空')
+        open(t('Username cannot be empty.'))
         return
     }
     else if(!password.value) 
     {
-        open('密码不能为空')
+        open(t('Password cannot be empty.'))
         return
     }
     else if(!scode.value) 
     {
-        open('验证码不能为空')
+        open(t('Identifying Code cannot be empty.'))
         return
     }
     else if(scode.value !== code.value[`cp${code_num.value}`])
     {
-        open('校验码错误')
+        open(t('Wrong check code'))
         return
     }
     navigateTo('/dashboard')
@@ -183,12 +198,18 @@ const login = () => {
             margin: 5px auto 20px;
         }
         &-title{
-            margin: -5px auto 30px auto;
-            font-family: 'helvetica_neue';
+            margin: -3px auto 30px auto;
             text-align: center;
             color: #fff;
             font-size: 32px;
             font-weight: 400;
+            white-space: nowrap;
+        }
+        @include respond(phone){
+            width: 80%;
+            padding: 1.875rem .625rem 1.875rem .625rem;
+            background: transparent;
+            border: none;
         }
     }
     .flex-lang{
@@ -238,6 +259,9 @@ const login = () => {
         background: url('@/assets/image/icon1.png') no-repeat;
         background-size: 100% 100%;
         margin: 0 20px;
+        @include respond(phone){
+            margin: 0 1.25rem;
+        }
     }
     .icon2{
         display: block;

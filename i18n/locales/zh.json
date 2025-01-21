@@ -1,0 +1,18 @@
+{
+    "welcome": "leee",
+    "lan_select": "中文简体",
+    "title": "亚星管理平台",
+    "Account No.": "账号",
+    "Password": "密码",
+    "Identifying Code": "验证码",
+    "Language Selection": "语言选择",
+    "Login": "登录",
+    "Remember Me": "记住我",
+    "Google Chrome is recommended": "推荐使用谷歌浏览器",
+    "Reminder": "温馨提示",
+    "OK": "确定",
+    "Username cannot be empty.": "用户名不能为空",
+    "Password cannot be empty.": "密码不能为空",
+    "Identifying Code cannot be empty.": "验证码不能为空",
+    "Wrong check code": "校验码错误"
+  }
