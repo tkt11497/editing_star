@@ -4,22 +4,22 @@
         <div class="left"></div>
         <div class="login-box">
             <img src="@/assets/image/logo.png" alt="logo" class="login-box-logo">
-            <h2 class="login-box-title">{{ $t('title') }} </h2>
+            <h2 class="login-box-title">{{ $t('亚星管理平台') }} </h2>
             <div class="login-row">
                 <i class="icon1"></i>
-                <input v-model="username" autocomplete="off" type="text" :placeholder="`${$t('Account No.')}`" class="login-row-input">
+                <input v-model="username" autocomplete="off" type="text" :placeholder="`${$t('账号')}`" class="login-row-input">
             </div>
             <div class="login-row">
                 <i class="icon2"></i>
-                <input v-show="!showPassword" autocomplete="off" type="password" :placeholder="`${$t('Password')}`" class="login-row-input" v-model="password">
-                <input v-show="showPassword" autocomplete="off" type="text" :placeholder="`${$t('Password')}`" class="login-row-input" v-model="password">
+                <input v-show="!showPassword" autocomplete="off" type="password" :placeholder="`${$t('密码')}`" class="login-row-input" v-model="password">
+                <input v-show="showPassword" autocomplete="off" type="text" :placeholder="`${$t('密码')}`" class="login-row-input" v-model="password">
                 
                 <i class="eye" v-if="!showPassword" @click="showPassword=!showPassword"></i>
                 <i class="eye-show" v-else @click="showPassword=!showPassword"></i>
             </div>
             <div class="login-row">
                 <i class="icon3"></i>
-                <input v-model="scode" autocomplete="off" type="text" :placeholder="`${$t('Identifying Code')}`" class="login-row-input">
+                <input v-model="scode" autocomplete="off" type="text" :placeholder="`${$t('验证码')}`" class="login-row-input">
                 <div class="login-row-code">
                     <img @click="code_num=generateNumber()" :src="`/image/cp${code_num}.png`" alt="code" class="login-row-code-img">
                 </div>
@@ -27,14 +27,14 @@
             <div class="login-row flex-lang">
                 <div>
                     <i class="icon4"></i>
-                    <p class="lang-title">{{ $t('Language Selection') }}</p>
+                    <p class="lang-title">{{ $t('语言选择') }}</p>
                 </div>
                 <div style="margin-right: 10px;">
                     <i v-if="$i18n.locale==='zh'" class="zh_img"></i>
                     <i v-if="$i18n.locale==='en'" class="en_img"></i>
                     <el-select
                         v-model="value"
-                        :placeholder="`${$t('lan_select')}`"
+                        :placeholder="`${$t('中文简体')}`"
                         size="small"
                         style="width: 100px"
                         @change="changeLang"
@@ -49,9 +49,9 @@
                 </div>
             </div>
             <div>
-                <el-checkbox v-model="checked5" :label="`${$t('Remember Me')}`" style="margin: 0px 0px 25px; color: rgb(255, 255, 255);"  />
+                <el-checkbox v-model="checked5" :label="`${$t('记住我')}`" style="margin: 0px 0px 25px; color: rgb(255, 255, 255);"  />
             </div>
-            <button @click="login" class="login-btn">{{ $t('Login') }}</button>
+            <button @click="login" class="login-btn">{{ $t('登录') }}</button>
             <div class="login-footer">
                 <p>2.4.12.4.3</p>
                 <p style="padding-top: 8px;">{{ $t('Google Chrome is recommended') }}</p>
