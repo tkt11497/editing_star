@@ -22,25 +22,21 @@
 @import "layout/navigation";
 
 @import "pages/home";
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @font-face {
-  font-family: "spotify"; 
-  src: url('@/assets/font/spotify.ttf') format('truetype'); 
+  font-family: "helvetica_neue"; 
+  src: url('@/assets/font/helvetica_neue.otf') format('opentype'); 
 }
 
-.font-spotify {
-  font-family: 'spotify';
+.font-helvetica_neue {
+  font-family: 'helvetica_neue';
 }
 
 html {
   // height: 100%;
 }
 
-@font-face {
-  font-family: 'Spotify Mix';
-  src: url('@/assets/font/spotify.ttf') format('ttf');
-}
+
 
 
 body {

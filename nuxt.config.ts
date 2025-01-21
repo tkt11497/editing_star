@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'EditingStar',
+      title: '代理管理网',
       link: [
-        { rel: 'icon', type: 'image/png', href: '/logo.png' },  // Site favicon
+        { rel: 'icon', type: 'image/png', href: '/favicon.ico' },  // Site favicon
       ], 
       meta: [
         { charset: 'UTF-8' },
@@ -16,9 +16,9 @@ export default defineNuxtConfig({
     }
   },
   ssr: false,
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@element-plus/nuxt'],
   compatibilityDate: '2024-04-03',
-  css: ['~/assets/css/index.css','~/assets/css/tailwind.css','~/assets/css/init.scss'],
+  css: ['~/assets/css/index.css','~/assets/css/init.scss'],
   plugins: [
     // '~/plugins/bar/baz',
     // '~/plugins/bar/foz'

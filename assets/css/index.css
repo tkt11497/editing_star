@@ -4,7 +4,68 @@ body,
     @apply h-full
 }
 
+.el-select__placeholder.is-transparent {
+    color: rgb(31, 45, 61)!important;
+    font-size: 13px!important;
+    font-weight: 400!important;
+}
+.el-select {
+
+}
+.el-message-box__title {
+    padding-left: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 1;
+    color: #303133;
+}
+.el-message-box{
+    padding: 15px!important;
+}
+.el-message-box__headerbtn{
+    right: 5px!important;
+    top: 5px!important;
+}
+.el-message-box__content{
+    color:#303133!important;
+}
+.el-message-box__headerbtn .el-message-box__close{
+    color:#5d5d5d!important;
+}
+.el-select__wrapper {
+    background-color: var(--el-fill-color-blank);
+    border-radius: var(--el-border-radius-base);
+    border: 1px solid var(--el-border-color);
+    box-shadow: none!important;
+    cursor: pointer;
+    font-size: 13px;
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    padding: 4px 12px 4px 14px!important;
+}
+.el-select__wrapper.is-focused {
+    box-shadow: 0 0 0 0px var(--el-border-color) inset!important;
+    border: 1px solid #4f5bda!important;
+}
+.el-checkbox__label{
+    display: inline-block;
+    padding-left: 10px!important;
+    line-height: 19px;
+    font-size: 14px;
+    color: #fff!important;
+}
+.el-checkbox{
+    height: unset!important;
+    padding-bottom: 3px!important;
+    padding-top: 1px!important;
+}
+.el-checkbox__inner{
+    background-color: transparent !important;
+    border-color: #fff !important;
+}
 :root {
+    --el-color-primary:#4f5bda!important;
     --primary: #558BFF;
     --link: #638EFD;
     --tip: #9DACB4;
