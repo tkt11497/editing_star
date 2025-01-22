@@ -127,7 +127,7 @@ const generateNumber = () => {
     return Math.floor(Math.random() * 6) + 1
 }
 const code_num = ref(generateNumber())
-const login = () => {
+const login = async () => {
     console.log(username.value,password.value,scode.value)
     if(!username.value) 
     {
@@ -149,8 +149,30 @@ const login = () => {
         open(t('Wrong check code'))
         return
     }
-    navigateTo('/dashboard')
-    localStorage.setItem('username', username.value)
+    try {
+    const response = await fetch('/houtai.php', {
+      method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+            body: JSON.stringify({
+                username: username.value,
+                password: password.value,
+            }),
+        });
+
+        // const data = await response.json();
+
+        if (response.ok) {
+            navigateTo('/dashboard')
+            localStorage.setItem('username', username.value)
+            console.log('Login successful:');
+        } else {
+            console.log('Login failed:');
+        }
+    } catch (error) {
+        console.log('Error:', error);
+    }
 }
 
 </script>
