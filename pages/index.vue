@@ -83,10 +83,10 @@ const changeLang = (code) => {
     // window.location.reload()
 }
 const open = (msg) => {
-    ElMessageBox.alert(msg, t('Reminder'), {
+    ElMessageBox.alert(msg, t('温馨提示'), {
     // if you want to disable its autofocus
     // autofocus: false,
-    confirmButtonText: t('OK'),
+    confirmButtonText: t('确定'),
     type: 'warning',
     // callback: (action) => {
     //   ElMessage({
@@ -150,6 +150,7 @@ const login = () => {
         return
     }
     navigateTo('/dashboard')
+    localStorage.setItem('username', username.value)
 }
 
 </script>

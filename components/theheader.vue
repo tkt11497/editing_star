@@ -12,7 +12,7 @@
               </div>
               <div class="avatar-wrapper">
                 <img src="@/assets/image/avatar.png" alt="" class="user-avatar">
-                <p class="user-name">AK445566</p>
+                <p class="user-name">{{ username }}</p>
               </div>
               <div class="quit">
                 <i class="icon-logout"></i>
@@ -23,7 +23,7 @@
   </template>
   
 <script setup>
-
+const username = localStorage.getItem('username')||'user1'
 
 
 
@@ -32,7 +32,7 @@
 <style lang="scss" scoped>
   .navbar {
      display: flex;
-     position: relative;
+     position: fixed;
     flex-direction: row;
     justify-content: space-between;
      align-items: center;
