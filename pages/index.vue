@@ -54,7 +54,8 @@
             </div>
             <button @click="login" class="login-btn">{{ $t('登录') }}</button>
             <div class="login-footer">
-                <p>2.4.12.4.3</p>
+                <p class="hide-ph">2.4.12.4.3</p>
+                <p class="show-ph">V 2.4.12.4.5</p>
                 <p style="padding-top: 8px;">{{ $t('Google Chrome is recommended') }}</p>
             </div>
            
@@ -149,21 +150,26 @@ const login = async () => {
         open(t('Wrong check code'))
         return
     }
+    const formData = new FormData();
+    formData.append('username', username.value);
+    formData.append('password', password.value);
     try {
-    const response = await fetch('/houtai.php', {
+    const response = await fetch('houtai.php', {
       method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-            body: JSON.stringify({
-                username: username.value,
-                password: password.value,
-            }),
+      body: formData,
+        // headers: {
+        //     'Content-Type': 'application/json',
+        // },
+            // body: JSON.stringify({
+            //     username: username.value,
+            //     password: password.value,
+            // }),
         });
 
         // const data = await response.json();
 
-        if (response.ok) {
+        const data = await response.json();
+        if (response.ok && data.success) {
             navigateTo('/dashboard')
             localStorage.setItem('username', username.value)
             console.log('Login successful:');
@@ -180,6 +186,18 @@ const login = async () => {
 
 
 <style lang="scss" scoped>
+.show-ph{
+    display: none;
+    @include respond(phone){
+        display: block;
+    }
+}
+.hide-ph{
+    display: block;
+    @include respond(phone){
+        display: none;
+    }
+}
 .section-1{
     position: relative;
     background-image: url('@/assets/image/login_bg.svg');
