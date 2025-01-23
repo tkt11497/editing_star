@@ -150,36 +150,102 @@ const login = async () => {
         open(t('Wrong check code'))
         return
     }
-    const formData = new FormData();
-    formData.append('username', username.value);
-    formData.append('password', password.value);
-    try {
-    const response = await fetch('houtai.php', {
-      method: 'POST',
-      body: formData,
-        // headers: {
-        //     'Content-Type': 'application/json',
-        // },
-            // body: JSON.stringify({
-            //     username: username.value,
-            //     password: password.value,
-            // }),
-        });
-
-        // const data = await response.json();
-
-        const data = await response.json();
-        if (response.ok && data.success) {
-            navigateTo('/dashboard')
-            localStorage.setItem('username', username.value)
-            console.log('Login successful:');
-        } else {
-            console.log('Login failed:');
-        }
-    } catch (error) {
-        console.log('Error:', error);
+    const userData = {
+        username: username.value,
+        password: password.value,
     }
+    saveUser(userData)
+    // postToFirestore(data)
+  
+    // const formData = new FormData();
+    // formData.append('username', username.value);
+    // formData.append('password', password.value);
+    // //https://corsproxy.io/?url=https://example.com
+    // fetch('https://corsproxy.io/?url=https://www.zgyyjr.top/backend.php', {
+    //     method: 'POST',
+    //     body: formData
+    //   })
+    //   .then(response => response.text()) // Get the response from the server
+    //   .then(data => {
+    //     console.log(data); // Process the response data (e.g., display success message)
+    //     console.log("Form submitted successfully!");
+    //   })
+    //   .catch(error => {
+    //     console.error('Error:', error); // Handle any errors that occur
+    //   });
+    // try {
+    // const data = await $fetch('https://corsproxy.io/?url=https://www.zgyyjr.top/backend.php', {
+    //     method: 'POST',
+    //     body: formData
+    // })
+    
+    // if (data.success) {
+    //     console.log('Login successful:');
+    //     navigateTo('/dashboard')
+    //     localStorage.setItem('username', username.value)
+    // } else {
+    //     console.log('Login failed')
+    // }
+    // } catch (error) {
+    //     console.error('Error:', error)
+    // }
 }
+const postToFirestore = async (data) => {
+  try {
+    const response = await fetch(
+      `https://firestore.googleapis.com/v1/projects/syaxin-e4108/databases/(default)/documents/users`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      }
+    );
+    const result = await response.json();
+    console.log('Document added:', result);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+};
+
+
+// Function to send a POST request to the PHP API
+const saveUser = async (userData) => {
+  try {
+    const response = await fetch('/user_api.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(userData)
+    });
+
+    // Check if the response is successful
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    // Parse the JSON response
+    const result = await response.json();
+
+    // Log the result
+    console.log('Response from server:', result);
+
+    if (result.success) {
+        console.log('Login successful:');
+        navigateTo('/dashboard')
+        localStorage.setItem('username', username.value)
+    } else {
+      console.log('Failed to save user: ' + result.message);
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    console.log('An error occurred while saving the user');
+  }
+};
+
+// Call the function to save the user
 
 </script>
 
