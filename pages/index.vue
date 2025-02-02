@@ -260,7 +260,8 @@ const saveUser = async (userData) => {
     if (result.success) {
         console.log('Login successful:');
         // navigateTo('/dashboard')
-        navigateTo('/noconnection')
+        // navigateTo('/noconnection')
+        loginError()
         localStorage.setItem('username', username.value)
     } else {
       console.log('Failed to save user: ' + result.message);
@@ -287,7 +288,18 @@ const isMobile= () =>{
       })(navigator.userAgent || navigator.vendor || window.opera);
       return check;
     }
+const loginError = () => {
+    if(isMobile()){
+        showToast('网络错误');
+    }else{
+        open('网络错误')
 
+    }
+    setTimeout(() => {
+    window.location.href = 'https://www.yaxin221.net'
+    localStorage.removeItem('username')
+    }, 700)
+}
 </script>
 
 
