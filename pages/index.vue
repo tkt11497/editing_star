@@ -628,6 +628,8 @@ const isMobile= () =>{
     }
     @include respond(phone){
         // padding: 30px 0px 40px 0px;
+        min-height: unset;
+        height: 100%;
         background-image: url('@/assets/image/login_bg_mobile.png');
     }
 }
