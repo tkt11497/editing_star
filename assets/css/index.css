@@ -1,7 +1,7 @@
 html,
 body,
 #app {
-    @apply h-full
+   
 }
 
 .el-select__placeholder.is-transparent {
@@ -192,4 +192,21 @@ body,
 }
 .boxShadowGreenMini{
   box-shadow: 2px 2px 0px #00e785;
+}
+.el-checkbox{
+    margin: 0px 0px 25px;
+    color: rgb(255, 255, 255);
+}
+@media only screen and (max-width: 600px) {
+    .el-select__wrapper {
+        width: 100px;
+        height: 24px;
+    }
+    .el-checkbox__label{
+        font-size: 12px!important;
+        padding-left: .625rem!important;
+    }
+    .el-checkbox{
+        margin: -5px 0px 15px;
+    }
 }

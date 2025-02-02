@@ -34,6 +34,7 @@
 
 html {
   // height: 100%;
+  font-size: 12px;
 }
 
 
@@ -106,18 +107,20 @@ body {
   }
 }
 
-.van-dialog__cancel {
-  border: 1px solid #83C3FF !important;
-  background: linear-gradient(0deg, #D9E9FF 0%, #E8F3FF 92.35%) !important;
-}
+// .van-dialog__cancel {
+//   border: 1px solid #83C3FF !important;
+//   background: linear-gradient(0deg, #D9E9FF 0%, #E8F3FF 92.35%) !important;
+// }
 
-.van-dialog__content {
-  padding: 20px !important;
-}
+// .van-dialog__content {
+//   padding: 20px !important;
+// }
 
 .van-dialog__confirm {
-  margin-left: 2px !important;
-  background: linear-gradient(140deg, #83C3FF 12.78%, #638EFD 83.31%) !important;
+ color: #ee0a24!important;
+}
+.van-dialog__header {
+  font-weight: 500!important;
 }
 
 .rotating {

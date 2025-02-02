@@ -1,6 +1,6 @@
 <template>
     <div class="main-container">
-        <theheader></theheader>
+        <theheader class="header-1"></theheader>
 
         <slot />
     </div>
@@ -22,8 +22,10 @@ const close_nav=()=>{
 .main-container {
     overflow: hidden;
 }
-@media (min-width: 850px) {
-
+@media (max-width: 600px) {
+.header-1{
+    display: none;
+}
 .drawer-toggle {
   display: none;
 }

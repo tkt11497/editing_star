@@ -16,7 +16,7 @@ export default defineNuxtConfig({
     }
   },
   ssr: false,
-  modules: ['@element-plus/nuxt','@nuxtjs/i18n'],
+  modules: ['@element-plus/nuxt','@nuxtjs/i18n','@vant/nuxt'],
   i18n: {
     locales: [
       {
