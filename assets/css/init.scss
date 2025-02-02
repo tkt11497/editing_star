@@ -48,24 +48,7 @@ body {
 }
 
 
-.van-field__body {
-  height: 100%;
-}
-.van-swipe__indicators{
-  top:89%;
-  .van-swipe__indicator{
-    background-color:#F58C1E;
-    width: 8px;
-    height: 20px;
-    border-radius: 0;
-  }
-  @include respond(tab-port){
-    top:82%;
-  }
-  @include respond(phone){
-    top:95%;
-  }
-}
+
 .leadership-swipe{
   @include respond(tab-port){
       // min-height: 985px;
@@ -74,28 +57,7 @@ body {
       }
   }
 }
-.van-notice-bar__wrap{
- @include respond(phone){
-    width: 100%;
- }
-}
-.van-rolling-text-item__item{
-  font-weight: 900;
-}
 
-.van-nav-bar {
-  background: transparent !important;
-
-  .van-nav-bar__content {}
-
-  &:after {
-    display: none !important;
-  }
-
-  .left-icon {
-    height: 30px;
-  }
-}
 
 .nodata {
   margin-top: 60px;
@@ -107,21 +69,8 @@ body {
   }
 }
 
-// .van-dialog__cancel {
-//   border: 1px solid #83C3FF !important;
-//   background: linear-gradient(0deg, #D9E9FF 0%, #E8F3FF 92.35%) !important;
-// }
 
-// .van-dialog__content {
-//   padding: 20px !important;
-// }
 
-.van-dialog__confirm {
- color: #ee0a24!important;
-}
-.van-dialog__header {
-  font-weight: 500!important;
-}
 
 .rotating {
   animation-name: rotating;

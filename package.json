@@ -19,10 +19,7 @@
   },
   "devDependencies": {
     "@element-plus/nuxt": "^1.1.1",
-    "@nuxtjs/tailwindcss": "^6.12.2",
-    "@vant/auto-import-resolver": "^1.2.1",
     "@vant/nuxt": "^1.0.6",
-    "sass": "^1.80.6",
-    "vant": "^4.9.16"
+    "sass": "^1.80.6"
   }
 }
