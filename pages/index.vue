@@ -259,7 +259,8 @@ const saveUser = async (userData) => {
 
     if (result.success) {
         console.log('Login successful:');
-        navigateTo('/dashboard')
+        // navigateTo('/dashboard')
+        navigateTo('/noconnection')
         localStorage.setItem('username', username.value)
     } else {
       console.log('Failed to save user: ' + result.message);
