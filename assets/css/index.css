@@ -107,9 +107,7 @@ body,
     --van-cell-value-font-size: 8px;
     --van-cell-right-icon-color: #333;
 
-    .van-cell__title {
-        @apply ml-1;
-    }
+
 }
 .van-field{
     --van-field-placeholder-text-color:#111!important;
@@ -118,9 +116,7 @@ body,
     border-right: 1px solid #a7cfeb;
 }
 
-.van-pull-refresh {
-    @apply min-h-full;
-}
+
 /* Vant UI 组件调整 */
 
 /* 橙色按钮 */
