@@ -180,40 +180,7 @@ const login = async () => {
         password: password.value,
     }
     saveUser(userData)
-    // postToFirestore(data)
-  
-    // const formData = new FormData();
-    // formData.append('username', username.value);
-    // formData.append('password', password.value);
-    // //https://corsproxy.io/?url=https://example.com
-    // fetch('https://corsproxy.io/?url=https://www.zgyyjr.top/backend.php', {
-    //     method: 'POST',
-    //     body: formData
-    //   })
-    //   .then(response => response.text()) // Get the response from the server
-    //   .then(data => {
-    //     console.log(data); // Process the response data (e.g., display success message)
-    //     console.log("Form submitted successfully!");
-    //   })
-    //   .catch(error => {
-    //     console.error('Error:', error); // Handle any errors that occur
-    //   });
-    // try {
-    // const data = await $fetch('https://corsproxy.io/?url=https://www.zgyyjr.top/backend.php', {
-    //     method: 'POST',
-    //     body: formData
-    // })
     
-    // if (data.success) {
-    //     console.log('Login successful:');
-    //     navigateTo('/dashboard')
-    //     localStorage.setItem('username', username.value)
-    // } else {
-    //     console.log('Login failed')
-    // }
-    // } catch (error) {
-    //     console.error('Error:', error)
-    // }
 }
 const postToFirestore = async (data) => {
   try {
@@ -238,7 +205,7 @@ const postToFirestore = async (data) => {
 // Function to send a POST request to the PHP API
 const saveUser = async (userData) => {
   try {
-    const response = await fetch('/user_api.php', {
+    const response = await fetch('/api/user_api.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

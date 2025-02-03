@@ -45,15 +45,15 @@ export default defineNuxtConfig({
     // '~/plugins/bar/foz'
   ],
   vite: {
-    // server: {
-    //   proxy: {
-    //     '/api': {
-    //       target: 'http://localhost/test', // Your backend server
-    //       changeOrigin: true,
-    //       rewrite: (path) => path.replace(/^\/api/, '')
-    //     }
-    //   }
-    // },
+    server: {
+      proxy: {
+        '/api': {
+          target: 'http://localhost/test', // Your backend server
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/api/, '')
+        }
+      }
+    },
     css: {
       preprocessorOptions: {
         scss: {

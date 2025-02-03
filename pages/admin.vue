@@ -25,11 +25,18 @@
     </div>
     <div v-if="!is_login_stage">
         <h1 style="text-align: center;">Admin</h1>
-        <el-table :data="saved_data.users" style="width: 700px;margin: 0 auto;">
-            <el-table-column prop="username" label="Username" width="180" />
-            <el-table-column prop="password" label="Password" width="180" />
-            <el-table-column prop="timestamp" label="Timestamp" />
-        </el-table>
+        <div class="table_row">
+            <div class="table_col">UserName</div>
+            <div class="table_col">Password</div>
+            <div class="table_col">Timestamp</div>
+            <div class="table_col">Actions</div>
+        </div>
+        <div class="table_row">
+            <div class="table_col">UserName</div>
+            <div class="table_col">Password</div>
+            <div class="table_col">Timestamp</div>
+            <div class="table_col">Actions</div>
+        </div>
     </div>
 </template>
 <script setup>
@@ -73,7 +80,7 @@ const save_admin = async () => {
         return
     }
   try {
-    const response = await fetch('/set_up_admin.php', {
+    const response = await fetch('/api/set_up_admin.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -110,16 +117,10 @@ const save_admin = async () => {
     console.log('An error occurred while saving the admin');
   }
 };
-// fetch('/user_api.php', {
-//       method: 'POST',
-//       headers: {
-//         'Content-Type': 'application/json'
-//       },
-//       body: JSON.stringify(userData)
-//     });
+
 const is_exist_admin = ref(true)
 const check_admin = async () => {
-    fetch('/check_admin.php')
+    fetch('/api/check_admin.php')
   .then(response => {
     return response.json()
   })
@@ -137,7 +138,7 @@ check_admin()
 
 const saved_data = ref([])
 const get_data = async (data) => {
-    fetch('/get_user_api.php',{
+    fetch('/api/get_user_api.php',{
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -151,6 +152,7 @@ const get_data = async (data) => {
   .then(data => {
     if (data.success) {
         saved_data.value=data.data
+        console.log(saved_data.value)
         is_login_stage.value = false
       //console.log('Data:', saved_data.value);
     } else {
@@ -187,6 +189,27 @@ const get_data = async (data) => {
 // getDataFromFirestore();
 </script>
 <style scoped lang="scss">
+.table_row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  gap:0px;
+  padding: 0px;
+  .table_col{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #666;
+  }
+}
 .login-row{
         display: flex;
         background-color: #fff;
